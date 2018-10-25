@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="2">
+        <file>
+            <url>src/Template/Drugs/elhay.ctp</url>
+            <bookmark id="2">
+                <name/>
+                <line>1210</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group name="Group 20170828-12:40:21"/>
+        <group>
+            <file>file:/G:/xampp/htdocs/naql/plugins/Usermgmt/src/Template/Users/login.ctp</file>
+            <file>file:/G:/xampp/htdocs/naql/src/Template/Owners/onwerprofile.ctp</file>
+            <file>file:/G:/xampp/htdocs/naql/src/Template/Owners/Myorders.ctp</file>
+            <file>file:/G:/xampp/htdocs/naql/src/Template/Owners/Offers.ctp</file>
+            <file>file:/G:/xampp/htdocs/naql/src/Template/Owners/DriverDetails.ctp</file>
+            <file>file:/G:/xampp/htdocs/naql/src/Controller/ReservationsController.php</file>
+            <file>file:/G:/xampp/htdocs/naql/src/Template/Reservations/index.ctp</file>
+            <file>file:/G:/xampp/htdocs/naql/src/Template/MachinePhotos/view.ctp</file>
+            <file>file:/G:/xampp/htdocs/naql/plugins/Usermgmt/config/routes.php</file>
+            <file>file:/G:/xampp/htdocs/naql/config/app.php</file>
+            <file>file:/G:/xampp/htdocs/naql/webroot/dashboard/css/elhay.css</file>
+            <file>file:/G:/xampp/htdocs/naql/src/Controller/MachinesController.php</file>
+            <file>file:/G:/xampp/htdocs/naql/src/Template/Element/dashboard/header.ctp</file>
+            <file>file:/G:/xampp/htdocs/naql/webroot/js/offers.js</file>
+            <file>file:/G:/xampp/htdocs/naql/webroot/sass/layout/_ownerForm.scss</file>
+            <file>file:/G:/xampp/htdocs/naql/plugins/Usermgmt/src/Controller/UsersController.php</file>
+            <file>file:/G:/xampp/htdocs/naql/src/Template/Owners/onwerprofileen.ctp</file>
+            <file>file:/G:/xampp/htdocs/naql/webroot/js/owner.js</file>
+            <file>file:/G:/xampp/htdocs/naql/webroot/css/style.css</file>
+            <file>file:/G:/xampp/htdocs/naql/src/Template/Owners/error404.ctp</file>
+            <file>file:/G:/xampp/htdocs/naql/src/Model/Table/ReservationsTable.php</file>
+            <file>file:/G:/xampp/htdocs/naql/src/Template/Owners/Offers_en.ctp</file>
+            <file>file:/G:/xampp/htdocs/naql/src/Model/Table/MachinePhotosTable.php</file>
+            <file>file:/G:/xampp/htdocs/naql/src/Controller/AppController.php</file>
+        </group>
+    </open-files>
+</project-private>

@@ -1,0 +1,1210 @@
+2016-08-18 15:08:40 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tabib.login_tokens' doesn't exist
+Stack Trace:
+#0 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'login_tokens', Array, Object(Cake\Database\Schema\Table))
+#1 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('login_tokens', Array)
+#2 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('login_tokens')
+#3 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(336): Cake\ORM\Table->schema()
+#4 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(216): Bake\Shell\Task\ModelTask->findHasMany(Object(Cake\ORM\Table), Array)
+#5 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'comments', 'Comments')
+#7 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Comments')
+#8 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(162): Bake\Shell\Task\ModelTask->main('comments')
+#9 [internal function]: Bake\Shell\Task\ModelTask->all()
+#10 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#11 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\Shell.php(450): Cake\Console\Shell->runCommand(Array, false)
+#12 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#13 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#14 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#15 D:\xampp\htdocs\tabib\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#16 {main}
+
+
+2017-02-22 02:03:05 Error: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'medical_office'@'localhost' (using password: YES)
+Stack Trace:
+#0 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('mysql:host=loca...', 'medical_office', 'fisal!!!', Array)
+#1 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(90): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Connection.php(317): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(920): Cake\Database\Connection->schemaCollection()
+#8 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(875): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(198): Bake\Shell\Task\ModelTask->listAll()
+#10 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#11 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'advicecats', 'Advicecats')
+#12 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Advicecats')
+#13 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Advicecats')
+#14 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('advicecats', 0)
+#15 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#16 [internal function]: Bake\Shell\BakeShell->all('advicecats')
+#17 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#18 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#20 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#21 D:\xampp\htdocs\tabib\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#22 {main}
+
+
+2017-02-22 02:03:10 Error: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'medical_office'@'localhost' (using password: YES)
+Stack Trace:
+#0 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('mysql:host=loca...', 'medical_office', 'fisal!!!', Array)
+#1 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(90): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Connection.php(317): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(920): Cake\Database\Connection->schemaCollection()
+#8 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(875): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(198): Bake\Shell\Task\ModelTask->listAll()
+#10 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#11 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'advicecats', 'Advicecats')
+#12 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Advicecats')
+#13 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Advicecats')
+#14 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('advicecats', 0)
+#15 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#16 [internal function]: Bake\Shell\BakeShell->all('advicecats')
+#17 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#18 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#20 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#21 D:\xampp\htdocs\tabib\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#22 {main}
+
+
+2017-02-22 02:04:20 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tabib.advicecomments' doesn't exist
+Stack Trace:
+#0 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'advicecomments', Array, Object(Cake\Database\Schema\Table))
+#1 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('advicecomments', Array)
+#2 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('advicecomments')
+#3 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'advicecomments', 'Advicecomments')
+#7 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Advicecomments')
+#8 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Advicecomments')
+#9 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('advicecomments', 0)
+#10 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('advicecomments')
+#12 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 D:\xampp\htdocs\tabib\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-02-23 01:37:18 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tabib.advicecomments' doesn't exist
+Stack Trace:
+#0 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'advicecomments', Array, Object(Cake\Database\Schema\Table))
+#1 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('advicecomments', Array)
+#2 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('advicecomments')
+#3 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(336): Cake\ORM\Table->schema()
+#4 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(216): Bake\Shell\Task\ModelTask->findHasMany(Object(Cake\ORM\Table), Array)
+#5 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'advice_comments', 'Advice-comments')
+#7 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Advice-comments')
+#8 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Advice-comments')
+#9 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('advice-comments', 0)
+#10 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('advice-comments')
+#12 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 D:\xampp\htdocs\tabib\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-02-23 01:37:44 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tabib.advicecomments' doesn't exist
+Stack Trace:
+#0 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'advicecomments', Array, Object(Cake\Database\Schema\Table))
+#1 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('advicecomments', Array)
+#2 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('advicecomments')
+#3 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(255): Cake\ORM\Table->schema()
+#4 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(207): Bake\Shell\Task\ModelTask->findBelongsTo(Object(App\Model\Table\AdvicecommentsTable), Array)
+#5 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\AdvicecommentsTable))
+#6 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(App\Model\Table\AdvicecommentsTable), 'advice_comments', 'AdviceComments')
+#7 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('AdviceComments')
+#8 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('AdviceComments')
+#9 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('advice_comments', 0)
+#10 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('advice_comments')
+#12 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 D:\xampp\htdocs\tabib\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-02-23 01:38:11 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tabib.advicecomments' doesn't exist
+Stack Trace:
+#0 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'advicecomments', Array, Object(Cake\Database\Schema\Table))
+#1 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('advicecomments', Array)
+#2 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('advicecomments')
+#3 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(255): Cake\ORM\Table->schema()
+#4 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(207): Bake\Shell\Task\ModelTask->findBelongsTo(Object(App\Model\Table\AdvicecommentsTable), Array)
+#5 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\AdvicecommentsTable))
+#6 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(App\Model\Table\AdvicecommentsTable), 'advice_comments', 'AdviceComments')
+#7 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('AdviceComments')
+#8 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('AdviceComments')
+#9 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('advice_comments', 0)
+#10 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('advice_comments')
+#12 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 D:\xampp\htdocs\tabib\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-02-23 01:38:33 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tabib.advicecomments' doesn't exist
+Stack Trace:
+#0 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'advicecomments', Array, Object(Cake\Database\Schema\Table))
+#1 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('advicecomments', Array)
+#2 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('advicecomments')
+#3 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(336): Cake\ORM\Table->schema()
+#4 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(216): Bake\Shell\Task\ModelTask->findHasMany(Object(Cake\ORM\Table), Array)
+#5 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'advice_comments', 'Advice-comments')
+#7 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Advice-comments')
+#8 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Advice-comments')
+#9 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('advice-comments', 0)
+#10 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('advice-comments')
+#12 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 D:\xampp\htdocs\tabib\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-02-23 01:38:43 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tabib.advicecomments' doesn't exist
+Stack Trace:
+#0 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'advicecomments', Array, Object(Cake\Database\Schema\Table))
+#1 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('advicecomments', Array)
+#2 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('advicecomments')
+#3 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(255): Cake\ORM\Table->schema()
+#4 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(207): Bake\Shell\Task\ModelTask->findBelongsTo(Object(App\Model\Table\AdvicecommentsTable), Array)
+#5 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\AdvicecommentsTable))
+#6 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(App\Model\Table\AdvicecommentsTable), 'advicecomments', 'Advicecomments')
+#7 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Advicecomments')
+#8 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Advicecomments')
+#9 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('advicecomments', 0)
+#10 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('advicecomments')
+#12 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 D:\xampp\htdocs\tabib\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-02-23 01:38:52 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tabib.advicecomments' doesn't exist
+Stack Trace:
+#0 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'advicecomments', Array, Object(Cake\Database\Schema\Table))
+#1 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('advicecomments', Array)
+#2 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('advicecomments')
+#3 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(255): Cake\ORM\Table->schema()
+#4 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(207): Bake\Shell\Task\ModelTask->findBelongsTo(Object(App\Model\Table\AdvicecommentsTable), Array)
+#5 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\AdvicecommentsTable))
+#6 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(App\Model\Table\AdvicecommentsTable), 'advice_comments', 'AdviceComments')
+#7 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('AdviceComments')
+#8 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('AdviceComments')
+#9 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('advice_comments', 0)
+#10 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('advice_comments')
+#12 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 D:\xampp\htdocs\tabib\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-02-23 01:39:10 Error: [PDOException] SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+
+Stack Trace:
+#0 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(90): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Connection.php(317): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(920): Cake\Database\Connection->schemaCollection()
+#8 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(875): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(198): Bake\Shell\Task\ModelTask->listAll()
+#10 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\AdvicecommentsTable))
+#11 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(App\Model\Table\AdvicecommentsTable), 'advice_comments', 'AdviceComments')
+#12 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('AdviceComments')
+#13 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('AdviceComments')
+#14 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('advice_comments', 0)
+#15 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#16 [internal function]: Bake\Shell\BakeShell->all('advice_comments')
+#17 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#18 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#20 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#21 D:\xampp\htdocs\tabib\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#22 {main}
+
+
+2017-02-23 01:39:18 Error: [PDOException] SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+
+Stack Trace:
+#0 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(90): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Connection.php(317): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(920): Cake\Database\Connection->schemaCollection()
+#8 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(875): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(198): Bake\Shell\Task\ModelTask->listAll()
+#10 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\AdvicecommentsTable))
+#11 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(App\Model\Table\AdvicecommentsTable), 'advice_comments', 'AdviceComments')
+#12 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('AdviceComments')
+#13 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('AdviceComments')
+#14 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('advice_comments', 0)
+#15 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#16 [internal function]: Bake\Shell\BakeShell->all('advice_comments')
+#17 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#18 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#20 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#21 D:\xampp\htdocs\tabib\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#22 {main}
+
+
+2017-02-23 01:39:21 Error: [PDOException] SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+
+Stack Trace:
+#0 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(90): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Connection.php(317): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(920): Cake\Database\Connection->schemaCollection()
+#8 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(875): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(198): Bake\Shell\Task\ModelTask->listAll()
+#10 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\AdvicecommentsTable))
+#11 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(App\Model\Table\AdvicecommentsTable), 'advice_comments', 'AdviceComments')
+#12 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('AdviceComments')
+#13 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('AdviceComments')
+#14 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('advice_comments', 0)
+#15 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#16 [internal function]: Bake\Shell\BakeShell->all('advice_comments')
+#17 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#18 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#20 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#21 D:\xampp\htdocs\tabib\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#22 {main}
+
+
+2017-02-23 01:39:40 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tabib.advicecomments' doesn't exist
+Stack Trace:
+#0 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'advicecomments', Array, Object(Cake\Database\Schema\Table))
+#1 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('advicecomments', Array)
+#2 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('advicecomments')
+#3 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(255): Cake\ORM\Table->schema()
+#4 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(207): Bake\Shell\Task\ModelTask->findBelongsTo(Object(App\Model\Table\AdvicecommentsTable), Array)
+#5 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\AdvicecommentsTable))
+#6 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(App\Model\Table\AdvicecommentsTable), 'advice_comments', 'AdviceComments')
+#7 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('AdviceComments')
+#8 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('AdviceComments')
+#9 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('advice_comments', 0)
+#10 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('advice_comments')
+#12 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 D:\xampp\htdocs\tabib\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-02-23 01:39:41 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tabib.advicecomments' doesn't exist
+Stack Trace:
+#0 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'advicecomments', Array, Object(Cake\Database\Schema\Table))
+#1 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('advicecomments', Array)
+#2 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('advicecomments')
+#3 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(255): Cake\ORM\Table->schema()
+#4 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(207): Bake\Shell\Task\ModelTask->findBelongsTo(Object(App\Model\Table\AdvicecommentsTable), Array)
+#5 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\AdvicecommentsTable))
+#6 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(App\Model\Table\AdvicecommentsTable), 'advice_comments', 'AdviceComments')
+#7 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('AdviceComments')
+#8 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('AdviceComments')
+#9 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('advice_comments', 0)
+#10 D:\xampp\htdocs\tabib\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('advice_comments')
+#12 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 D:\xampp\htdocs\tabib\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 D:\xampp\htdocs\tabib\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-04-23 12:55:40 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ready.models' doesn't exist
+Stack Trace:
+#0 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'models', Array, Object(Cake\Database\Schema\Table))
+#1 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('models', Array)
+#2 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('models')
+#3 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'models', 'Models')
+#7 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Models')
+#8 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Models')
+#9 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('models', 0)
+#10 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('models')
+#12 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 D:\xammp\htdocs\ready\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-04-23 12:56:19 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ready.order' doesn't exist
+Stack Trace:
+#0 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'order', Array, Object(Cake\Database\Schema\Table))
+#1 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('order', Array)
+#2 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('order')
+#3 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'order', 'Order')
+#7 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Order')
+#8 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Order')
+#9 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('order', 0)
+#10 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('order')
+#12 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 D:\xammp\htdocs\ready\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-04-23 12:56:36 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ready.cahs_types' doesn't exist
+Stack Trace:
+#0 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'cahs_types', Array, Object(Cake\Database\Schema\Table))
+#1 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('cahs_types', Array)
+#2 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('cahs_types')
+#3 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'cahs_types', 'CahsTypes')
+#7 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('CahsTypes')
+#8 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('CahsTypes')
+#9 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('cahs_types', 0)
+#10 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('cahs_types')
+#12 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 D:\xammp\htdocs\ready\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-04-23 12:57:16 Warning: Warning (512): Association property name "order_details" clashes with field of same name of table "orders". You should explicitly specify the "propertyName" option. in [D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\ORM\Association.php, line 446]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+Cake\ORM\Association::property() - CORE\src\ORM\Association.php, line 446
+Bake\Shell\Task\ModelTask::getEntityPropertySchema() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 496
+Bake\Shell\Task\ModelTask::getTableContext() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 129
+Bake\Shell\Task\ModelTask::bake() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 109
+Bake\Shell\Task\ModelTask::main() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 96
+Bake\Shell\BakeShell::Bake\Shell\{closure}() - ROOT\vendor\cakephp\bake\src\Shell\BakeShell.php, line 250
+Cake\Collection\Collection::each() - CORE\src\Collection\CollectionTrait.php, line 51
+Bake\Shell\BakeShell::all() - ROOT\vendor\cakephp\bake\src\Shell\BakeShell.php, line 253
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 444
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 221
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 181
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 127
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2017-04-23 12:57:17 Warning: Warning (512): Association property name "order_details" clashes with field of same name of table "orders". You should explicitly specify the "propertyName" option. in [D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\ORM\Association.php, line 446]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+Cake\ORM\Association::property() - CORE\src\ORM\Association.php, line 446
+Bake\Utility\Model\AssociationFilter::filterAssociations() - ROOT\vendor\cakephp\bake\src\Utility\Model\AssociationFilter.php, line 94
+Bake\Shell\Task\TemplateTask::_filteredAssociations() - ROOT\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php, line 465
+Bake\Shell\Task\TemplateTask::_loadController() - ROOT\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php, line 295
+Bake\Shell\Task\TemplateTask::main() - ROOT\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php, line 147
+Bake\Shell\BakeShell::Bake\Shell\{closure}() - ROOT\vendor\cakephp\bake\src\Shell\BakeShell.php, line 252
+Cake\Collection\Collection::each() - CORE\src\Collection\CollectionTrait.php, line 51
+Bake\Shell\BakeShell::all() - ROOT\vendor\cakephp\bake\src\Shell\BakeShell.php, line 253
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 444
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 221
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 181
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 127
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2017-04-23 13:31:57 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ready.controllers' doesn't exist
+Stack Trace:
+#0 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'controllers', Array, Object(Cake\Database\Schema\Table))
+#1 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('controllers', Array)
+#2 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('controllers')
+#3 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'controllers', 'Controllers')
+#7 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Controllers')
+#8 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Controllers')
+#9 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('controllers', 0)
+#10 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('controllers')
+#12 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 D:\xammp\htdocs\ready\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-04-23 13:34:06 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ready.controllers' doesn't exist
+Stack Trace:
+#0 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'controllers', Array, Object(Cake\Database\Schema\Table))
+#1 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('controllers', Array)
+#2 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('controllers')
+#3 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'controllers', 'Controllers')
+#7 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Controllers')
+#8 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Controllers')
+#9 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('controllers', 0)
+#10 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('controllers')
+#12 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 D:\xammp\htdocs\ready\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-04-23 13:35:24 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ready.controllers' doesn't exist
+Stack Trace:
+#0 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'controllers', Array, Object(Cake\Database\Schema\Table))
+#1 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('controllers', Array)
+#2 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('controllers')
+#3 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'controllers', 'Controllers')
+#7 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Controllers')
+#8 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Controllers')
+#9 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('controllers', 0)
+#10 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('controllers')
+#12 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 D:\xammp\htdocs\ready\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-04-23 13:35:31 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ready.models' doesn't exist
+Stack Trace:
+#0 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'models', Array, Object(Cake\Database\Schema\Table))
+#1 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('models', Array)
+#2 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('models')
+#3 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'models', 'Models')
+#7 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Models')
+#8 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Models')
+#9 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('models', 0)
+#10 D:\xammp\htdocs\ready\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('models')
+#12 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 D:\xammp\htdocs\ready\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 D:\xammp\htdocs\ready\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-05-03 11:09:09 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ready.products' doesn't exist
+Stack Trace:
+#0 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'products', Array, Object(Cake\Database\Schema\Table))
+#1 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('products', Array)
+#2 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('products')
+#3 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'products', 'Products')
+#7 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Products')
+#8 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Products')
+#9 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('products', 0)
+#10 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('products')
+#12 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 D:\xammp\htdocs\rwnak\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-05-03 11:10:04 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ready.products' doesn't exist
+Stack Trace:
+#0 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'products', Array, Object(Cake\Database\Schema\Table))
+#1 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('products', Array)
+#2 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('products')
+#3 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'products', 'Products')
+#7 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Products')
+#8 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Products')
+#9 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('products', 0)
+#10 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('products')
+#12 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 D:\xammp\htdocs\rwnak\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-05-03 11:11:48 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ready.products' doesn't exist
+Stack Trace:
+#0 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'products', Array, Object(Cake\Database\Schema\Table))
+#1 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('products', Array)
+#2 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('products')
+#3 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'products', 'Products')
+#7 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Products')
+#8 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Products')
+#9 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('products', 0)
+#10 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('products')
+#12 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 D:\xammp\htdocs\rwnak\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-05-03 11:15:57 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'rwnak.order_deatils' doesn't exist
+Stack Trace:
+#0 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'order_deatils', Array, Object(Cake\Database\Schema\Table))
+#1 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('order_deatils', Array)
+#2 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('order_deatils')
+#3 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'order_deatils', 'OrderDeatils')
+#7 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('OrderDeatils')
+#8 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('OrderDeatils')
+#9 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('order_deatils', 0)
+#10 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('order_deatils')
+#12 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 D:\xammp\htdocs\rwnak\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-05-04 14:58:34 Error: [PDOException] SQLSTATE[HY000] [1049] Unknown database 'rwnak'
+Stack Trace:
+#0 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(90): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Database\Connection.php(317): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(920): Cake\Database\Connection->schemaCollection()
+#8 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(875): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(198): Bake\Shell\Task\ModelTask->listAll()
+#10 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#11 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'areas', 'Areas')
+#12 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Areas')
+#13 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Areas')
+#14 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('areas', 0)
+#15 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#16 [internal function]: Bake\Shell\BakeShell->all('areas')
+#17 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#18 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#20 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#21 D:\xammp\htdocs\rwnak\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#22 {main}
+
+
+2017-05-06 08:30:22 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'rwank.service_icon_id' doesn't exist
+Stack Trace:
+#0 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'service_icon_id', Array, Object(Cake\Database\Schema\Table))
+#1 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('service_icon_id', Array)
+#2 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('service_icon_id')
+#3 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'service_icon_id', 'ServiceIconId')
+#7 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('ServiceIconId')
+#8 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('ServiceIconId')
+#9 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('service_icon_id', 0)
+#10 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('service_icon_id')
+#12 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 D:\xammp\htdocs\rwnak\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-05-07 11:31:10 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'rwank.products' doesn't exist
+Stack Trace:
+#0 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'products', Array, Object(Cake\Database\Schema\Table))
+#1 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('products', Array)
+#2 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('products')
+#3 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(255): Cake\ORM\Table->schema()
+#4 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(207): Bake\Shell\Task\ModelTask->findBelongsTo(Object(App\Model\Table\ProductsTable), Array)
+#5 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\ProductsTable))
+#6 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(App\Model\Table\ProductsTable), 'products', 'Products')
+#7 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Products')
+#8 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Products')
+#9 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('products', 0)
+#10 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('products')
+#12 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 D:\xammp\htdocs\rwnak\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-05-07 11:32:06 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'rwank.products' doesn't exist
+Stack Trace:
+#0 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'products', Array, Object(Cake\Database\Schema\Table))
+#1 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('products', Array)
+#2 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('products')
+#3 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(255): Cake\ORM\Table->schema()
+#4 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(207): Bake\Shell\Task\ModelTask->findBelongsTo(Object(App\Model\Table\ProductsTable), Array)
+#5 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\ProductsTable))
+#6 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(App\Model\Table\ProductsTable), 'products', 'Products')
+#7 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Products')
+#8 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Products')
+#9 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('products', 0)
+#10 D:\xammp\htdocs\rwnak\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('products')
+#12 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 D:\xammp\htdocs\rwnak\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 D:\xammp\htdocs\rwnak\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-07-22 09:17:53 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dawaya.chat' doesn't exist
+Stack Trace:
+#0 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'chat', Array, Object(Cake\Database\Schema\Table))
+#1 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('chat', Array)
+#2 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('chat')
+#3 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'chat', 'Chat')
+#7 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Chat')
+#8 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Chat')
+#9 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('chat', 0)
+#10 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('chat')
+#12 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 E:\xammp2\htdocs\dawaya\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-07-22 09:18:23 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dawaya.chat' doesn't exist
+Stack Trace:
+#0 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'chat', Array, Object(Cake\Database\Schema\Table))
+#1 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('chat', Array)
+#2 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('chat')
+#3 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'chat', 'Chat')
+#7 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Chat')
+#8 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Chat')
+#9 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('chat', 0)
+#10 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('chat')
+#12 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 E:\xammp2\htdocs\dawaya\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-07-22 09:19:09 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dawaya.chat' doesn't exist
+Stack Trace:
+#0 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'chat', Array, Object(Cake\Database\Schema\Table))
+#1 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('chat', Array)
+#2 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('chat')
+#3 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'chat', 'Chat')
+#7 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Chat')
+#8 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Chat')
+#9 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('chat', 0)
+#10 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('chat')
+#12 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 E:\xammp2\htdocs\dawaya\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-07-22 09:33:18 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dawaya.chat' doesn't exist
+Stack Trace:
+#0 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'chat', Array, Object(Cake\Database\Schema\Table))
+#1 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('chat', Array)
+#2 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('chat')
+#3 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'chat', 'Chat')
+#7 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Chat')
+#8 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Chat')
+#9 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('chat', 0)
+#10 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('chat')
+#12 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 E:\xammp2\htdocs\dawaya\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-07-22 09:33:26 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dawaya.chat' doesn't exist
+Stack Trace:
+#0 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'chat', Array, Object(Cake\Database\Schema\Table))
+#1 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('chat', Array)
+#2 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('chat')
+#3 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'chat', 'Chat')
+#7 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Chat')
+#8 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Chat')
+#9 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('chat', 0)
+#10 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('chat')
+#12 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 E:\xammp2\htdocs\dawaya\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-07-29 15:13:31 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dawaya.account_cats' doesn't exist
+Stack Trace:
+#0 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'account_cats', Array, Object(Cake\Database\Schema\Table))
+#1 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('account_cats', Array)
+#2 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('account_cats')
+#3 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'account_cats', 'AccountCats')
+#7 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('AccountCats')
+#8 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('AccountCats')
+#9 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('account_cats', 0)
+#10 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('account_cats')
+#12 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 E:\xammp2\htdocs\dawaya\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-11-14 09:43:45 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dawaya.car_types' doesn't exist
+Stack Trace:
+#0 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'car_types', Array, Object(Cake\Database\Schema\Table))
+#1 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('car_types', Array)
+#2 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('car_types')
+#3 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'car_types', 'CarTypes')
+#7 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('CarTypes')
+#8 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('CarTypes')
+#9 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('CarTypes', 0)
+#10 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('CarTypes')
+#12 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 E:\xammp2\htdocs\dawaya\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-11-14 09:43:59 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dawaya.car_types' doesn't exist
+Stack Trace:
+#0 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'car_types', Array, Object(Cake\Database\Schema\Table))
+#1 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('car_types', Array)
+#2 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('car_types')
+#3 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'car_types', 'CarTypes')
+#7 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('CarTypes')
+#8 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('CarTypes')
+#9 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('car_types', 0)
+#10 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('car_types')
+#12 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 E:\xammp2\htdocs\dawaya\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-12-05 12:50:06 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dawaya.health_cats' doesn't exist
+Stack Trace:
+#0 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'health_cats', Array, Object(Cake\Database\Schema\Table))
+#1 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('health_cats', Array)
+#2 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('health_cats')
+#3 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'health_cats', 'HealthCats')
+#7 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('HealthCats')
+#8 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('HealthCats')
+#9 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('HealthCats', 0)
+#10 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('HealthCats')
+#12 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 E:\xammp2\htdocs\dawaya\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-12-05 12:50:20 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dawaya.health_cats' doesn't exist
+Stack Trace:
+#0 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'health_cats', Array, Object(Cake\Database\Schema\Table))
+#1 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('health_cats', Array)
+#2 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('health_cats')
+#3 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'health_cats', 'HealthCats')
+#7 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('HealthCats')
+#8 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('HealthCats')
+#9 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('health_cats', 0)
+#10 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('health_cats')
+#12 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 E:\xammp2\htdocs\dawaya\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-12-05 12:50:39 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dawaya.health_cats' doesn't exist
+Stack Trace:
+#0 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'health_cats', Array, Object(Cake\Database\Schema\Table))
+#1 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('health_cats', Array)
+#2 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('health_cats')
+#3 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'health_cats', 'HealthCats')
+#7 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('HealthCats')
+#8 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('HealthCats')
+#9 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('health_cats', 0)
+#10 E:\xammp2\htdocs\dawaya\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('health_cats')
+#12 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 E:\xammp2\htdocs\dawaya\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 E:\xammp2\htdocs\dawaya\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-12-11 13:37:34 Warning: Warning (2): include(E:\xammp2\htdocs\cv/plugins/Usermgmt/config\bootstrap.php): failed to open stream: No such file or directory in [E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Core\Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+Cake\Core\Plugin::_includeFile() - CORE\src\Core\Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE\src\Core\Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE\src\Core\Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE\src\Core\Plugin.php, line 174
+include - ROOT\config\bootstrap.php, line 224
+[main] - ROOT\bin\cake.php, line 31
+
+
+
+2017-12-11 13:37:34 Warning: Warning (2): include(): Failed opening 'E:\xammp2\htdocs\cv/plugins/Usermgmt/config\bootstrap.php' for inclusion (include_path='E:\xammp2\php\PEAR') in [E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Core\Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+Cake\Core\Plugin::_includeFile() - CORE\src\Core\Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE\src\Core\Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE\src\Core\Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE\src\Core\Plugin.php, line 174
+include - ROOT\config\bootstrap.php, line 224
+[main] - ROOT\bin\cake.php, line 31
+
+
+
+2017-12-11 13:37:34 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dawaya.sliders' doesn't exist
+Stack Trace:
+#0 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'sliders', Array, Object(Cake\Database\Schema\Table))
+#1 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('sliders', Array)
+#2 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('sliders')
+#3 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 E:\xammp2\htdocs\cv\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 E:\xammp2\htdocs\cv\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 E:\xammp2\htdocs\cv\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'sliders', 'Sliders')
+#7 E:\xammp2\htdocs\cv\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Sliders')
+#8 E:\xammp2\htdocs\cv\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Sliders')
+#9 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('sliders', 0)
+#10 E:\xammp2\htdocs\cv\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('sliders', 'Alaxos/Bootstra...')
+#12 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 E:\xammp2\htdocs\cv\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2017-12-11 13:38:00 Warning: Warning (2): include(E:\xammp2\htdocs\cv/plugins/Usermgmt/config\bootstrap.php): failed to open stream: No such file or directory in [E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Core\Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+Cake\Core\Plugin::_includeFile() - CORE\src\Core\Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE\src\Core\Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE\src\Core\Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE\src\Core\Plugin.php, line 174
+include - ROOT\config\bootstrap.php, line 224
+[main] - ROOT\bin\cake.php, line 31
+
+
+
+2017-12-11 13:38:00 Warning: Warning (2): include(): Failed opening 'E:\xammp2\htdocs\cv/plugins/Usermgmt/config\bootstrap.php' for inclusion (include_path='E:\xammp2\php\PEAR') in [E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Core\Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+Cake\Core\Plugin::_includeFile() - CORE\src\Core\Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE\src\Core\Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE\src\Core\Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE\src\Core\Plugin.php, line 174
+include - ROOT\config\bootstrap.php, line 224
+[main] - ROOT\bin\cake.php, line 31
+
+
+
+2017-12-11 13:38:00 Error: [Cake\Controller\Exception\MissingComponentException] Component class UserAuthComponent could not be found.
+Exception Attributes: array (
+  'class' => 'UserAuthComponent',
+  'plugin' => 'Usermgmt',
+)
+Stack Trace:
+#0 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(91): Cake\Controller\ComponentRegistry->_throwMissingClassError('UserAuth', 'Usermgmt')
+#1 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Controller\Controller.php(321): Cake\Core\ObjectRegistry->load('Usermgmt.UserAu...', Array)
+#2 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Controller\Controller.php(475): Cake\Controller\Controller->loadComponent('Usermgmt.UserAu...', Array)
+#3 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Controller\Controller.php(265): Cake\Controller\Controller->_loadComponents()
+#4 E:\xammp2\htdocs\cv\vendor\cakephp\bake\src\Shell\Task\TestTask.php(317): Cake\Controller\Controller->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 E:\xammp2\htdocs\cv\vendor\cakephp\bake\src\Shell\Task\TestTask.php(224): Bake\Shell\Task\TestTask->buildTestSubject('Controller', 'App\\Controller\\...')
+#6 E:\xammp2\htdocs\cv\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(202): Bake\Shell\Task\TestTask->bake('Controller', 'Sliders')
+#7 E:\xammp2\htdocs\cv\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(151): Bake\Shell\Task\ControllerTask->bakeTest('Sliders')
+#8 E:\xammp2\htdocs\cv\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(65): Bake\Shell\Task\ControllerTask->bake('Sliders')
+#9 E:\xammp2\htdocs\cv\vendor\cakephp\bake\src\Shell\BakeShell.php(251): Bake\Shell\Task\ControllerTask->main('Sliders')
+#10 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('sliders', 0)
+#11 E:\xammp2\htdocs\cv\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#12 [internal function]: Bake\Shell\BakeShell->all('sliders', 'Alaxos/Bootstra...')
+#13 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#14 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#15 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#16 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#17 E:\xammp2\htdocs\cv\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#18 {main}
+
+
+2017-12-11 13:38:25 Warning: Warning (2): include(E:\xammp2\htdocs\cv/plugins/Usermgmt/config\bootstrap.php): failed to open stream: No such file or directory in [E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Core\Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+Cake\Core\Plugin::_includeFile() - CORE\src\Core\Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE\src\Core\Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE\src\Core\Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE\src\Core\Plugin.php, line 174
+include - ROOT\config\bootstrap.php, line 224
+[main] - ROOT\bin\cake.php, line 31
+
+
+
+2017-12-11 13:38:25 Warning: Warning (2): include(): Failed opening 'E:\xammp2\htdocs\cv/plugins/Usermgmt/config\bootstrap.php' for inclusion (include_path='E:\xammp2\php\PEAR') in [E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Core\Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+Cake\Core\Plugin::_includeFile() - CORE\src\Core\Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE\src\Core\Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE\src\Core\Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE\src\Core\Plugin.php, line 174
+include - ROOT\config\bootstrap.php, line 224
+[main] - ROOT\bin\cake.php, line 31
+
+
+
+2017-12-11 13:38:27 Error: [Cake\Controller\Exception\MissingComponentException] Component class UserAuthComponent could not be found.
+Exception Attributes: array (
+  'class' => 'UserAuthComponent',
+  'plugin' => 'Usermgmt',
+)
+Stack Trace:
+#0 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(91): Cake\Controller\ComponentRegistry->_throwMissingClassError('UserAuth', 'Usermgmt')
+#1 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Controller\Controller.php(321): Cake\Core\ObjectRegistry->load('Usermgmt.UserAu...', Array)
+#2 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Controller\Controller.php(475): Cake\Controller\Controller->loadComponent('Usermgmt.UserAu...', Array)
+#3 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Controller\Controller.php(265): Cake\Controller\Controller->_loadComponents()
+#4 E:\xammp2\htdocs\cv\vendor\cakephp\bake\src\Shell\Task\TestTask.php(317): Cake\Controller\Controller->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 E:\xammp2\htdocs\cv\vendor\cakephp\bake\src\Shell\Task\TestTask.php(224): Bake\Shell\Task\TestTask->buildTestSubject('Controller', 'App\\Controller\\...')
+#6 E:\xammp2\htdocs\cv\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(202): Bake\Shell\Task\TestTask->bake('Controller', 'Sliders')
+#7 E:\xammp2\htdocs\cv\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(151): Bake\Shell\Task\ControllerTask->bakeTest('Sliders')
+#8 E:\xammp2\htdocs\cv\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(65): Bake\Shell\Task\ControllerTask->bake('Sliders')
+#9 E:\xammp2\htdocs\cv\vendor\cakephp\bake\src\Shell\BakeShell.php(251): Bake\Shell\Task\ControllerTask->main('Sliders')
+#10 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('sliders', 0)
+#11 E:\xammp2\htdocs\cv\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#12 [internal function]: Bake\Shell\BakeShell->all('sliders')
+#13 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#14 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#15 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#16 E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#17 E:\xammp2\htdocs\cv\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#18 {main}
+
+
+2017-12-11 13:41:26 Warning: Warning (2): include(E:\xammp2\htdocs\cv/plugins/Usermgmt/config\bootstrap.php): failed to open stream: No such file or directory in [E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Core\Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+Cake\Core\Plugin::_includeFile() - CORE\src\Core\Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE\src\Core\Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE\src\Core\Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE\src\Core\Plugin.php, line 174
+include - ROOT\config\bootstrap.php, line 224
+[main] - ROOT\bin\cake.php, line 31
+
+
+
+2017-12-11 13:41:26 Warning: Warning (2): include(): Failed opening 'E:\xammp2\htdocs\cv/plugins/Usermgmt/config\bootstrap.php' for inclusion (include_path='E:\xammp2\php\PEAR') in [E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Core\Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+Cake\Core\Plugin::_includeFile() - CORE\src\Core\Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE\src\Core\Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE\src\Core\Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE\src\Core\Plugin.php, line 174
+include - ROOT\config\bootstrap.php, line 224
+[main] - ROOT\bin\cake.php, line 31
+
+
+
+2017-12-11 13:42:07 Warning: Warning (2): include(E:\xammp2\htdocs\cv/plugins/Usermgmt/config\bootstrap.php): failed to open stream: No such file or directory in [E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Core\Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+Cake\Core\Plugin::_includeFile() - CORE\src\Core\Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE\src\Core\Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE\src\Core\Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE\src\Core\Plugin.php, line 174
+include - ROOT\config\bootstrap.php, line 224
+[main] - ROOT\bin\cake.php, line 31
+
+
+
+2017-12-11 13:42:07 Warning: Warning (2): include(): Failed opening 'E:\xammp2\htdocs\cv/plugins/Usermgmt/config\bootstrap.php' for inclusion (include_path='E:\xammp2\php\PEAR') in [E:\xammp2\htdocs\cv\vendor\cakephp\cakephp\src\Core\Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+Cake\Core\Plugin::_includeFile() - CORE\src\Core\Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE\src\Core\Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE\src\Core\Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE\src\Core\Plugin.php, line 174
+include - ROOT\config\bootstrap.php, line 224
+[main] - ROOT\bin\cake.php, line 31
+
+
+
+2018-04-07 18:43:33 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quran.alaxos/bootstrap_theme' doesn't exist
+Stack Trace:
+#0 E:\xammp2\htdocs\naql\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'alaxos/bootstra...', Array, Object(Cake\Database\Schema\Table))
+#1 E:\xammp2\htdocs\naql\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('alaxos/bootstra...', Array)
+#2 E:\xammp2\htdocs\naql\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('alaxos/bootstra...')
+#3 E:\xammp2\htdocs\naql\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 E:\xammp2\htdocs\naql\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 E:\xammp2\htdocs\naql\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 E:\xammp2\htdocs\naql\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'alaxos/bootstra...', 'Alaxos/Bootstra...')
+#7 E:\xammp2\htdocs\naql\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Alaxos/Bootstra...')
+#8 [internal function]: Bake\Shell\Task\ModelTask->main('Alaxos/Bootstra...')
+#9 E:\xammp2\htdocs\naql\vendor\cakephp\cakephp\src\Console\Shell.php(456): call_user_func_array(Array, Array)
+#10 E:\xammp2\htdocs\naql\vendor\cakephp\cakephp\src\Console\Shell.php(450): Cake\Console\Shell->runCommand(Array, false)
+#11 E:\xammp2\htdocs\naql\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#12 E:\xammp2\htdocs\naql\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#13 E:\xammp2\htdocs\naql\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#14 E:\xammp2\htdocs\naql\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#15 {main}
+
+
+2018-05-22 12:30:32 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'naql.reuls' doesn't exist
+Stack Trace:
+#0 E:\xammp2\htdocs\naql\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'reuls', Array, Object(Cake\Database\Schema\Table))
+#1 E:\xammp2\htdocs\naql\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('reuls', Array)
+#2 E:\xammp2\htdocs\naql\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('reuls')
+#3 E:\xammp2\htdocs\naql\vendor\cakephp\cakephp\src\ORM\Table.php(506): Cake\ORM\Table->schema()
+#4 E:\xammp2\htdocs\naql\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 E:\xammp2\htdocs\naql\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 E:\xammp2\htdocs\naql\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'reuls', 'Reuls')
+#7 E:\xammp2\htdocs\naql\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Reuls')
+#8 E:\xammp2\htdocs\naql\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Reuls')
+#9 E:\xammp2\htdocs\naql\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('reuls', 0)
+#10 E:\xammp2\htdocs\naql\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('reuls')
+#12 E:\xammp2\htdocs\naql\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 E:\xammp2\htdocs\naql\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(221): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 E:\xammp2\htdocs\naql\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 E:\xammp2\htdocs\naql\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 E:\xammp2\htdocs\naql\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+

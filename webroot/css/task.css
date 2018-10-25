@@ -1,0 +1,174 @@
+
+@font-face { font-family: 'JF Flat regular'; src: url('JF Flat regular.otf'); }
+* {font-family: 'JF Flat regular';color: #8c8c8c}
+hr {background-color: black;}
+.bg-lighter{background-color: #dddddd;}
+.bg-yellow {background: #f5db60;}
+.bg-dark-yellow {background-color: #e1bc0e;}
+footer {margin-top: 300px;}
+.navbar_image {width: 150px; margin-left: 15px;}
+.navbar_image:hover {position: relative; z-index: 1; top: 20px; left: 30px; -ms-transform: scale(1.5,1.5); -webkit-transform: scale(1.5,1.5); transform: scale(1.5,1.5); background-color: #f5db60}
+.navbar_collapse_image {width: 40px;}
+#currentOrdersBtn, #commentsButton {border-bottom: 03px #ffad33 solid;border-top: 0px; border-right: 0px; border-left: 0px;}
+#prevOrdersBtn, #aboutPersonButton {border-bottom: 03px #fff solid;border-top: 0px; border-right: 0px; border-left: 0px;}
+#currentOrdersBtn, #prevOrdersBtn, #commentsButton, #aboutPersonButton {cursor: pointer;}
+#prevOrders, #aboutPerson , #previous_orders_pagination{display: none;}
+.circleBullet {width: 1rem;}
+#price {border: 02px black solid;border-radius: 20px;}
+.orderContainer {border-radius: 10px;}
+#sendRequst {border-radius: 50px;}
+#bottomNav {border-radius: 60px;}
+.bottomNavImg {width: 45%;}
+.orderPriceImg, .likeImg {width: 80px;}
+.userRating:hover {cursor: pointer;}
+#ordersViewedByForm {font-size: 1.5rem;}
+.telephoneIcon {width: 5rem;}
+.machinePhoto {width: 8rem;}
+.accountImg {width: 60%;}
+.chatIcon:hover {cursor: pointer}
+.ratingConnection {width: 2%;}
+.wideRatingLine {width: 20%;height: 30%;}
+.userRating2:hover {cursor: pointer;}
+#logoContainer{width: 200px; height: 180px;}
+#websiteLogo{width: 200px; height: 180px;}
+#logoUnderImg{width: 100%; height: 150px;background-image: url(images/loginBkg.png); background-repeat: repeat-x; padding-bottom: 0px; margin-bottom: 0px;}
+.restoreFormControl{background: #565656;border-radius: 30px;color: #fff;padding: 0 20px;}
+#emailArea, #mobileArea, #recoveryCodeArea, #newPasswordArea {display: none;}
+.map {cursor: pointer}
+.mapContainer {position: absolute; z-index: 1; width: 95%; height: 400px; display: none; background-color: #f5db60; border-radius: 10px; margin-left: 10px;}
+#backButton:hover {cursor: pointer;}
+/* loader */
+.postLoading {display: none; position: fixed;z-index: 999;top: 0;left: 0;bottom: 0;right: 0;}
+.postLoading .loading-img {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);width: 100px;height: 66px;background: #fff;border-radius: 5px;padding: 10px;border: 1px solid #ddd;box-shadow: 1px 1px 5px #aaa;}
+.postLoading .loading-img img {width: 100%;animation: Postloading 1s infinite ease-in-out;}
+.user_container:hover {cursor: pointer}
+.ratingIcon:hover {cursor: pointer;}
+.infoIcon:hover {cursor: pointer;}
+@keyframes Postloading {from { transform: rotate(0); }
+to { transform: rotateY(360deg); }
+}
+#ratingResponse, #priceResponse {display: none; background-color: #000; position: fixed; z-index: 6; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 50%; color: #fff;}
+.nav-link {color: black}
+.nav-link:hover {color: #aaa}
+.lang_bar_icon {width: 20px; height: 20px;}
+
+footer {background: #e1bc0e;color: #1b0400;padding: 30px 0;}
+footer ul {list-style: none;}
+footer ul li {display: inline-block; padding: 8px!important; width: auto!important}
+footer ul li a {text-decoration:none;color:#000000;}
+footer ul li a:hover {text-decoration: none; color: #fff}
+.pagination .previous {display: flex;padding-left: 0;list-style: none;border-radius: .25rem;}
+.page-link .previous {display: inline;float: right}
+
+/* .previous li {float: right} */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #language_form select {border-radius: 10px; color: #565656}
+    #collapsibleNavbar {background-color: #dddddd;}
+    .navbar-nav {padding: 0px;}
+    .nav-item {padding-right: 10px;}
+    .nav-item:hover {padding-right: 10px; margin: 0px; background-color: #f5db60;}
+    .page_title {font-size: 20px; padding-top: 10px; padding-bottom: 10px; margin: 0px;}
+    .main_page_selectors {font-size: 15px;}
+    #lang_form option {font-size: 15px;}
+    .order_main_username {font-size: 15px; padding-top: 10px;}
+    .order_main_orderID {font-size: 15px;}
+    .showOffers h6 {font-size: 12px;}
+    .mapIcon {width: 30px ; height: 30px;}
+    .ownerImgContainer{width: 50px; height: 50px; overflow: hidden; border-radius: 50%; margin: 0 auto;}
+    .ownerImage{width: 100%; height: 100%;}
+    .order_text {font-size: 10px;}
+    .inputPrice {border-radius: 10px; padding: 05px;}
+    .dollarSign {width: 30px ; height: 30px;}
+    .infoIcon {width: 30px ; height: 30px;}
+    .userRating2 {width: 15px; height: 15px;}
+    .ratingIcon {width: 30px ; height: 30px;}
+    #backButton {width: 30px; height: 30px; margin-left: 10px;}
+    .offer_machine_photo {width: 80px; height: 80px;}
+    .offers_page_title {font-size: 15px; padding-top: 10px; padding-bottom: 10px; margin: 0px;}
+    /* owner page carousel */
+    #demo {width: 100% ; height: 250px; margin: auto}
+    .carousel-item img , .no_machine_photos {width: 100% ; height: 250px;}
+    .user_comment_time {font-size: 10px;}
+    .comment_username {font-size: 12px;}
+    .user_comment {font-size: 10px;}
+    .comment_profile_image {width: 30px; height: 30px;}
+    #ownerImageContainer{width: 80px; height: 80px; overflow: hidden; position: relative; top: -60px; margin: auto; border-radius: 50%;}
+    #ownerImage{width: 100%; height: 100%;}
+    .userRating {width: 30px; height: 30px;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #language_form select {border-radius: 10px; color: #565656}
+    #collapsibleNavbar {background-color: #f5db60;}
+    .navbar-nav {padding: 0px;}
+    .nav-item {padding-right: 10px;}
+    .nav-item:hover {padding-right: 10px; margin: 0px; background-color: #f5db60}
+    .page_title {font-size: 25px; padding-top: 10px; padding-bottom: 10px; margin: 0px;}
+    .main_page_selectors {font-size: 20px;}
+    #lang_form option {font-size: 15px;}
+    .order_main_username {font-size: 25px; padding-top: 10px;}
+    .order_main_orderID {font-size: 20px;}
+    .showOffers h6 {font-size: 15px;}
+    .mapIcon {width: 35px ; height: 35px;}
+    .ownerImgContainer{width: 60px; height: 60px; overflow: hidden; border-radius: 50%; margin: 0 auto;}
+    .ownerImage{width: 100%; height: 100%;}
+    .order_text {font-size: 15px;}
+    .inputPrice {border-radius: 10px; padding: 05px;}
+    .dollarSign {width: 35px ; height: 35px;}
+    .infoIcon {width: 35px ; height: 35px;}
+    .userRating2 {width: 20px; height: 20px;}
+    .ratingIcon {width: 35px ; height: 35px;}
+    #backButton {width: 35px; height: 35px; margin-left: 10px;}
+    .offer_machine_photo {width: 90px; height: 90px;}
+    .offers_page_title {font-size: 20px; padding-top: 10px; padding-bottom: 10px; margin: 0px;}
+    /* owner page carousel */
+    #demo {width: 100% ; height: 350px; margin: auto}
+    .carousel-item img , .no_machine_photos {width: 100% ; height: 350px;}
+    .user_comment_time {font-size: 15px;}
+    .comment_username {font-size: 20px;}
+    .user_comment {font-size: 15px;}
+    .comment_profile_image {width: 35px; height: 35px;}
+    #ownerImageContainer{width: 100px; height: 100px; overflow: hidden; position: relative; top: -60px; margin: auto; border-radius: 50%;}
+    #ownerImage{width: 100%; height: 100%;}
+    .userRating {width: 30px; height: 30px;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #language_form select {border-radius: 10px; color: #565656}
+    #collapsibleNavbar {background-color: #f5db60;}
+    .navbar-nav {padding: 0px;}
+    .page_title {font-size: 25px; padding-top: 10px; padding-bottom: 10px; margin: 0px;}
+    .main_page_selectors {font-size: 20px;}
+    #lang_form option {font-size: 15px;}
+    .order_main_username {font-size: 30px; padding-top: 10px;}
+    .order_main_orderID {font-size: 20px;}
+    .showOffers h6 {font-size: 20px;}
+    .mapIcon {width: 50px ; height: 50px;}
+    .ownerImgContainer{width: 100px; height: 100px; overflow: hidden; border-radius: 50%; margin: 0 auto;}
+    .ownerImage{width: 100%; height: 100%;}
+    .order_text {font-size: 17px;}
+    .inputPrice {border-radius: 10px; padding: 05px; width: 400px;}
+    .dollarSign {width: 50px ; height: 50px;}
+    .infoIcon {width: 50px ; height: 50px;}
+    .userRating2 {width: 30px; height: 30px;}
+    .ratingIcon {width: 50px ; height: 50px;}
+    #backButton {width: 40px; height: 40px; margin-left: 10px;}
+    .offer_machine_photo {width: 90px; height: 90px;}
+    .offers_page_title {font-size: 20px; padding-top: 10px; padding-bottom: 10px; margin: 0px;}
+    /* owner page carousel */
+    #demo {width: 100% ; height: 350px; margin: auto}
+    .carousel-item img , .no_machine_photos {width: 100% ; height: 350px;}
+    .user_comment_time {font-size: 15px;}
+    .comment_username {font-size: 20px;}
+    .user_comment {font-size: 15px;}
+    .comment_profile_image {width: 35px; height: 35px;}
+    #ownerImageContainer{width: 150px; height: 150px; overflow: hidden; position: relative; top: -90px; margin: auto; border-radius: 50%;}
+    #ownerImage{width: 100%; height: 100%;}
+    .userRating {width: 50px; height: 50px;}
+    footer .logo-img {width: 38% !important;}
+    footer .social {width: 34%;margin: 0 auto;}
+}

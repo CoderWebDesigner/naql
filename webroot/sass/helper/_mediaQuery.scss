@@ -1,0 +1,319 @@
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+
+    /*nav*/
+    .navbar-default {
+        .navbar-header {
+            width: 104%;
+            height: 100px;
+
+            .navbar-toggle {
+                margin-top: 30px;
+            }
+        }
+
+        .navbar-nav {
+            li {
+                padding: 5px 15px !important
+            }
+        }
+    }
+
+    #slider {
+        width: 400 !important;
+
+        img {
+            max-height: 420px !important;
+            min-height: 420px !important;
+        }
+    }
+
+    .nivo-directionNav {
+        a {
+            top: 40% !important
+        }
+    }
+
+    main {
+        padding: 0 !important;
+
+        .icon {
+            img {
+                width: 140px !important;
+            }
+        }
+
+        #choose-equip {
+            .equip {
+                min-height: 210px !important
+            }
+
+            .panel-body {
+                .icon {
+                    img {
+                        width: 150px !important;
+                    }
+                }
+            }
+
+        }
+
+        .tabs {
+            li {
+                margin: 0px !important;
+                min-height: 63px;
+
+                .icon {
+                    min-height: auto !important;
+                }
+
+                a {
+                    font-size: $baseFontSize !important;
+                }
+            }
+        }
+
+        #order {
+            padding: 2% 0 !important;
+        }
+
+        /* OWNER Register Page */
+        .ownerForm {
+            #ownerFrm {
+                width: 85% !important;
+
+                .control-label {
+                    img {
+                        margin: 8px 0;
+                    }
+                }
+            }
+        }
+
+        .steps-bar {
+            width: 100% !important;
+            padding: 20px 0px !important;
+            margin: 0 !important;
+
+            .step {
+                margin: 0 -11px !important;
+                max-height: 80px;
+            }
+
+            .control-label {
+                img {
+                    margin-top: 8px;
+                }
+            }
+        }
+
+        /* Equip Services Page */
+
+        #equipService {
+            .equip {
+                min-height: 180px !important;
+
+                img {
+                    width: 100px !important;
+                }
+            }
+        }
+    }
+
+    /*404 page */
+    .img-404 {
+        width: 100% !important;
+    }
+
+    /*about Page*/
+    .about-section {
+        p {
+            font-size: $baseFontSize
+        }
+    }
+
+    /*index Page*/
+    .why-naql {
+        padding: 20px 0 !important;
+        margin: 20px 0 !important;
+
+        .why-naql-list {
+            li {
+                font-size: $baseFontSize !important
+            }
+        }
+    }
+
+    .about {
+        p {
+            font-size: 15px !important
+        }
+    }
+
+    .steps-bar {
+        width: 100% !important;
+        padding: 20px 0px !important;
+        margin: 0 !important;
+
+        .step {
+            margin: 0 18px !important
+        }
+    }
+
+    #reservationForm .form {
+        width: 88% !important;
+    }
+
+    #userUploadImg {
+        left: 18%;
+    }
+
+    .social {
+        ul {
+            padding: 0px !important
+        }
+    }
+
+    .contact-body {
+        width: 65% !important
+    }
+
+    .login-form {
+        width: 85% !important
+    }
+
+    #editMyData {
+        width: 80% !important
+    }
+
+    #ownerFrm {
+        .control-label {
+            img {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .owner-profile {
+        .nav-tabs {
+            li.active {
+                a {
+                    height: 90px;
+                }
+            }
+        }
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+    .navbar-header {
+        width: 100% !important;
+
+        .navbar-toggle {
+            margin-top: 28px !important;
+        }
+    }
+
+    #slider {
+        width: 400 !important;
+
+        img {
+            max-height: 420px !important;
+            min-height: 420px !important;
+        }
+    }
+
+    main {
+        padding: 0 !important;
+
+        .tabs {
+            li {
+                margin: 0px !important;
+                min-height: 94px;
+
+                a {
+                    font-size: $baseFontSize !important;
+                }
+            }
+        }
+    }
+
+    .about {
+        p {
+            font-size: 15px !important
+        }
+    }
+
+    .steps-bar {
+        width: 100% !important;
+        padding: 20px 0px !important;
+        margin: 0 !important;
+
+        .step {
+            margin: 0 18px !important
+        }
+    }
+
+    /*404 page */
+    .img-404 {
+        width: 68% !important;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-default {
+        .navbar-nav {
+            li {
+                padding: 25px 0px !important
+            }
+        }
+    }
+
+    main {
+        .tabs {
+            li {
+                margin: 0 !important;
+
+                a {
+                    font-size: $baseFontSize !important;
+                }
+            }
+        }
+    }
+
+    .steps-bar {
+        width: 100% !important;
+        padding: 20px 0px !important;
+        margin: 0 !important;
+
+        .step {
+            margin: 0 18px !important
+        }
+    }
+
+    /*404 page */
+    .img-404 {
+        width: 68% !important;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    main {
+        .tabs {
+            li {
+                margin: 0 10px !important;
+            }
+        }
+    }
+
+    .steps-bar {
+        width: 100% !important;
+        padding: 20px 0px !important;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}

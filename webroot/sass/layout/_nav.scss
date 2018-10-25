@@ -1,0 +1,37 @@
+/* Start Nav Bar */
+.navbar-default {
+    background: $mainColor;
+    border: none;
+    margin-bottom: 0;
+    min-height: 95px;
+    border-bottom: 1px solid #ddd;
+    .navbar-header {
+        float: left;
+        .navbar-toggle {
+            float: right;
+            border-color: #333333;
+            border-radius: 0;
+            background: transparent
+        }
+        .navbar-brand {
+            float: left;
+            img {
+                width: 150px;
+            }
+        }
+    }
+    .navbar-nav {
+        li {
+            padding: 25px 15px;
+            a {
+                color: $fontColor;
+                font-size: $baseFontSize;
+                transition: color .4s ease-in-out;
+                &:hover,
+                &:focus {
+                    color: $linkHover
+                }
+            }
+        }
+    }
+}

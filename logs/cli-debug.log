@@ -1,0 +1,279 @@
+2017-05-04 14:59:28 Notice: Notice (8): Array to string conversion in [D:\xammp\htdocs\rwnak\tmp\bake\Bake-Element-Controller-copy-ctp.php, line 60]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - ROOT\tmp\bake\Bake-Element-Controller-copy-ctp.php, line 60
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 199
+Cake\View\View::_render() - CORE\src\View\View.php, line 955
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1332
+Cake\View\View::element() - CORE\src\View\View.php, line 493
+include - ROOT\tmp\bake\Bake-Controller-controller-ctp.php, line 53
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 199
+Cake\View\View::_render() - CORE\src\View\View.php, line 955
+Bake\View\BakeView::render() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 136
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php, line 89
+Bake\Shell\Task\ControllerTask::bakeController() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 177
+Bake\Shell\Task\ControllerTask::bake() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 150
+Bake\Shell\Task\ControllerTask::main() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 65
+Bake\Shell\BakeShell::Bake\Shell\{closure}() - ROOT\vendor\cakephp\bake\src\Shell\BakeShell.php, line 251
+Cake\Collection\Collection::each() - CORE\src\Collection\CollectionTrait.php, line 51
+Bake\Shell\BakeShell::all() - ROOT\vendor\cakephp\bake\src\Shell\BakeShell.php, line 253
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 444
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 221
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 181
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 127
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2017-05-04 15:01:48 Notice: Notice (8): Undefined offset: 0 in [D:\xammp\htdocs\rwnak\tmp\bake\index-ctp.php, line 152]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - ROOT\tmp\bake\index-ctp.php, line 152
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 199
+Cake\View\View::_render() - CORE\src\View\View.php, line 955
+Bake\View\BakeView::render() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 136
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php, line 89
+Bake\Shell\Task\TemplateTask::getContent() - ROOT\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php, line 419
+Bake\Shell\Task\TemplateTask::main() - ROOT\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php, line 151
+Bake\Shell\BakeShell::Bake\Shell\{closure}() - ROOT\vendor\cakephp\bake\src\Shell\BakeShell.php, line 252
+Cake\Collection\Collection::each() - CORE\src\Collection\CollectionTrait.php, line 51
+Bake\Shell\BakeShell::all() - ROOT\vendor\cakephp\bake\src\Shell\BakeShell.php, line 253
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 444
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 221
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 181
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 127
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2017-05-04 15:01:48 Notice: Notice (8): Undefined offset: 0 in [D:\xammp\htdocs\rwnak\tmp\bake\view-ctp.php, line 67]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - ROOT\tmp\bake\view-ctp.php, line 67
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 199
+Cake\View\View::_render() - CORE\src\View\View.php, line 955
+Bake\View\BakeView::render() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 136
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php, line 89
+Bake\Shell\Task\TemplateTask::getContent() - ROOT\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php, line 419
+Bake\Shell\Task\TemplateTask::main() - ROOT\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php, line 151
+Bake\Shell\BakeShell::Bake\Shell\{closure}() - ROOT\vendor\cakephp\bake\src\Shell\BakeShell.php, line 252
+Cake\Collection\Collection::each() - CORE\src\Collection\CollectionTrait.php, line 51
+Bake\Shell\BakeShell::all() - ROOT\vendor\cakephp\bake\src\Shell\BakeShell.php, line 253
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 444
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 221
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 181
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 127
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2017-06-17 23:30:56 Notice: Notice (8): Array to string conversion in [D:\xammp\htdocs\agza5ana\tmp\bake\Bake-Element-Controller-copy-ctp.php, line 60]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - ROOT\tmp\bake\Bake-Element-Controller-copy-ctp.php, line 60
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 199
+Cake\View\View::_render() - CORE\src\View\View.php, line 955
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1332
+Cake\View\View::element() - CORE\src\View\View.php, line 493
+include - ROOT\tmp\bake\Bake-Controller-controller-ctp.php, line 53
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 199
+Cake\View\View::_render() - CORE\src\View\View.php, line 955
+Bake\View\BakeView::render() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 136
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php, line 89
+Bake\Shell\Task\ControllerTask::bakeController() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 177
+Bake\Shell\Task\ControllerTask::bake() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 150
+Bake\Shell\Task\ControllerTask::main() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 65
+Bake\Shell\Task\ControllerTask::all() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 78
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 444
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 450
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 221
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 181
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 127
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2017-07-11 12:24:55 Notice: Notice (8): Array to string conversion in [E:\xammp2\htdocs\dawaya\tmp\bake\Bake-Element-Controller-copy-ctp.php, line 60]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - ROOT\tmp\bake\Bake-Element-Controller-copy-ctp.php, line 60
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 199
+Cake\View\View::_render() - CORE\src\View\View.php, line 955
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1332
+Cake\View\View::element() - CORE\src\View\View.php, line 493
+include - ROOT\tmp\bake\Bake-Controller-controller-ctp.php, line 53
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 199
+Cake\View\View::_render() - CORE\src\View\View.php, line 955
+Bake\View\BakeView::render() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 136
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php, line 89
+Bake\Shell\Task\ControllerTask::bakeController() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 177
+Bake\Shell\Task\ControllerTask::bake() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 150
+Bake\Shell\Task\ControllerTask::main() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 65
+Bake\Shell\Task\ControllerTask::all() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 78
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 444
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 450
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 221
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 181
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 127
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2017-07-11 12:24:55 Notice: Notice (8): Array to string conversion in [E:\xammp2\htdocs\dawaya\tmp\bake\Bake-Element-Controller-copy-ctp.php, line 60]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - ROOT\tmp\bake\Bake-Element-Controller-copy-ctp.php, line 60
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 199
+Cake\View\View::_render() - CORE\src\View\View.php, line 955
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1332
+Cake\View\View::element() - CORE\src\View\View.php, line 493
+include - ROOT\tmp\bake\Bake-Controller-controller-ctp.php, line 53
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 199
+Cake\View\View::_render() - CORE\src\View\View.php, line 955
+Bake\View\BakeView::render() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 136
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php, line 89
+Bake\Shell\Task\ControllerTask::bakeController() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 177
+Bake\Shell\Task\ControllerTask::bake() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 150
+Bake\Shell\Task\ControllerTask::main() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 65
+Bake\Shell\Task\ControllerTask::all() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 78
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 444
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 450
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 221
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 181
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 127
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2017-07-11 12:24:55 Notice: Notice (8): Array to string conversion in [E:\xammp2\htdocs\dawaya\tmp\bake\Bake-Element-Controller-copy-ctp.php, line 60]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - ROOT\tmp\bake\Bake-Element-Controller-copy-ctp.php, line 60
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 199
+Cake\View\View::_render() - CORE\src\View\View.php, line 955
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1332
+Cake\View\View::element() - CORE\src\View\View.php, line 493
+include - ROOT\tmp\bake\Bake-Controller-controller-ctp.php, line 53
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 199
+Cake\View\View::_render() - CORE\src\View\View.php, line 955
+Bake\View\BakeView::render() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 136
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php, line 89
+Bake\Shell\Task\ControllerTask::bakeController() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 177
+Bake\Shell\Task\ControllerTask::bake() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 150
+Bake\Shell\Task\ControllerTask::main() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 65
+Bake\Shell\Task\ControllerTask::all() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 78
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 444
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 450
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 221
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 181
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 127
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2017-07-11 12:24:55 Notice: Notice (8): Array to string conversion in [E:\xammp2\htdocs\dawaya\tmp\bake\Bake-Element-Controller-copy-ctp.php, line 60]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - ROOT\tmp\bake\Bake-Element-Controller-copy-ctp.php, line 60
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 199
+Cake\View\View::_render() - CORE\src\View\View.php, line 955
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1332
+Cake\View\View::element() - CORE\src\View\View.php, line 493
+include - ROOT\tmp\bake\Bake-Controller-controller-ctp.php, line 53
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 199
+Cake\View\View::_render() - CORE\src\View\View.php, line 955
+Bake\View\BakeView::render() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 136
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php, line 89
+Bake\Shell\Task\ControllerTask::bakeController() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 177
+Bake\Shell\Task\ControllerTask::bake() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 150
+Bake\Shell\Task\ControllerTask::main() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 65
+Bake\Shell\Task\ControllerTask::all() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 78
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 444
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 450
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 221
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 181
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 127
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2017-07-11 12:24:55 Notice: Notice (8): Array to string conversion in [E:\xammp2\htdocs\dawaya\tmp\bake\Bake-Element-Controller-copy-ctp.php, line 60]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - ROOT\tmp\bake\Bake-Element-Controller-copy-ctp.php, line 60
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 199
+Cake\View\View::_render() - CORE\src\View\View.php, line 955
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1332
+Cake\View\View::element() - CORE\src\View\View.php, line 493
+include - ROOT\tmp\bake\Bake-Controller-controller-ctp.php, line 53
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 199
+Cake\View\View::_render() - CORE\src\View\View.php, line 955
+Bake\View\BakeView::render() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 136
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php, line 89
+Bake\Shell\Task\ControllerTask::bakeController() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 177
+Bake\Shell\Task\ControllerTask::bake() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 150
+Bake\Shell\Task\ControllerTask::main() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 65
+Bake\Shell\Task\ControllerTask::all() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 78
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 444
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 450
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 221
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 181
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 127
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2017-07-23 15:04:54 Notice: Notice (8): Array to string conversion in [E:\xammp2\htdocs\dawaya\tmp\bake\Bake-Element-Controller-copy-ctp.php, line 60]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - ROOT\tmp\bake\Bake-Element-Controller-copy-ctp.php, line 60
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 199
+Cake\View\View::_render() - CORE\src\View\View.php, line 955
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1332
+Cake\View\View::element() - CORE\src\View\View.php, line 493
+include - ROOT\tmp\bake\Bake-Controller-controller-ctp.php, line 53
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 199
+Cake\View\View::_render() - CORE\src\View\View.php, line 955
+Bake\View\BakeView::render() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 136
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php, line 89
+Bake\Shell\Task\ControllerTask::bakeController() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 177
+Bake\Shell\Task\ControllerTask::bake() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 150
+Bake\Shell\Task\ControllerTask::main() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 65
+Bake\Shell\BakeShell::Bake\Shell\{closure}() - ROOT\vendor\cakephp\bake\src\Shell\BakeShell.php, line 251
+Cake\Collection\Collection::each() - CORE\src\Collection\CollectionTrait.php, line 51
+Bake\Shell\BakeShell::all() - ROOT\vendor\cakephp\bake\src\Shell\BakeShell.php, line 253
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 444
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 221
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 181
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 127
+[main] - ROOT\bin\cake.php, line 33
+
+
+
+2018-04-03 15:51:26 Notice: Notice (8): Array to string conversion in [E:\xammp2\htdocs\quraan\tmp\bake\Bake-Element-Controller-copy-ctp.php, line 60]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - ROOT\tmp\bake\Bake-Element-Controller-copy-ctp.php, line 60
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 199
+Cake\View\View::_render() - CORE\src\View\View.php, line 955
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1332
+Cake\View\View::element() - CORE\src\View\View.php, line 493
+include - ROOT\tmp\bake\Bake-Controller-controller-ctp.php, line 53
+Bake\View\BakeView::_evaluate() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 199
+Cake\View\View::_render() - CORE\src\View\View.php, line 955
+Bake\View\BakeView::render() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 136
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php, line 89
+Bake\Shell\Task\ControllerTask::bakeController() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 177
+Bake\Shell\Task\ControllerTask::bake() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 150
+Bake\Shell\Task\ControllerTask::main() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 65
+Bake\Shell\BakeShell::Bake\Shell\{closure}() - ROOT\vendor\cakephp\bake\src\Shell\BakeShell.php, line 251
+Cake\Collection\Collection::each() - CORE\src\Collection\CollectionTrait.php, line 51
+Bake\Shell\BakeShell::all() - ROOT\vendor\cakephp\bake\src\Shell\BakeShell.php, line 253
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 444
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 221
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 181
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 127
+[main] - ROOT\bin\cake.php, line 33
+
+
+

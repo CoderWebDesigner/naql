@@ -1,0 +1,42 @@
+#editMyData{
+    width: 60%;
+    margin: auto
+}
+.owner-profile{
+    .nav-tabs{
+        li{
+            a{
+                color:$fontColor
+            }
+        }
+        li.active{
+            a{
+                color:$mainColor !important;
+            }
+        }
+    }
+}
+.my-equip{
+    margin: 0 13%;
+    .my-equip_img{
+        padding: 6px;
+        img{
+            height: 120px;
+            width: 120px;
+            border-radius:50%;
+        }
+    }
+}
+
+.owner-icon{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ffffff85;
+    overflow: hidden;
+    margin: 0 auto;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}

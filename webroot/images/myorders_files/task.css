@@ -1,0 +1,59 @@
+
+@font-face { font-family: 'JF Flat regular'; src: url('JF Flat regular.otf'); }
+* {font-family: 'JF Flat regular';color: #8c8c8c}
+hr {background-color: black;}
+.bg-lighter{background-color: #dddddd;}
+.bg-yellow {background: #f5db60;}
+body {padding-bottom: 300px;}
+#currentOrdersBtn, #commentsButton {border-bottom: 03px #ffad33 solid;border-top: 0px; border-right: 0px; border-left: 0px;}
+#currentOrdersBtn, #prevOrdersBtn {cursor: pointer;}
+#prevOrders, #aboutPerson {display: none;}
+.circleBullet {width: 1rem;}
+#price {border: 02px black solid;border-radius: 20px;}
+.orderContainer {border-radius: 10px;}
+#sendRequst {border-radius: 50px;}
+#bottomNav {border-radius: 60px;}
+.bottomNavImg {width: 45%;}
+.orderPriceImg, .likeImg {width: 80px;}
+.userRating {max-width: 8%;}
+.userRating:hover {cursor: pointer;}
+#ordersViewedByForm {font-size: 1.5rem;}
+.telephoneIcon {width: 5rem;}
+.machinePhoto {width: 8rem;}
+.accountImg {width: 60%;}
+#demo {width: 100% ; height: 550px; margin: auto} 
+.carousel-item img {width: 100% ; height: 550px;} 
+.chatIcon:hover {cursor: pointer}
+.ratingConnection {width: 2%;}
+.wideRatingLine {width: 20%;height: 30%;}
+.userRating2 {width: 30px; height: 30px;}
+.userRating2:hover {cursor: pointer;}
+#ownerImageContainer{width: 150px; height: 150px; overflow: hidden; position: relative; top: -85px; margin: auto; border-radius: 50%;}
+#ownerImage{width: 100%; height: 100%;}
+.ownerImgContainer{max-width: 150px; max-height: 150px; overflow: hidden; border-radius: 50%;}
+.ownerImage{width: 100%; height: 100%;}
+#logoContainer{width: 200px; height: 180px;}
+#websiteLogo{width: 200px; height: 180px;}
+#logoUnderImg{width: 100%; height: 150px;background-image: url(images/loginBkg.png); background-repeat: repeat-x; padding-bottom: 0px; margin-bottom: 0px;}
+.restoreFormControl{background: #565656;border-radius: 30px;color: #fff;padding: 0 20px;}
+#emailArea, #mobileArea, #recoveryCodeArea, #newPasswordArea {display: none;}
+.map {cursor: pointer}
+.mapContainer {position: absolute; z-index: 100; width: 500%; height: 300%; display: none; background-color: #f5db60;}
+#backButton {width: 70px; height: auto;}
+#backButton:hover {cursor: pointer;}
+/* loader */
+.postLoading {display: none; position: fixed;z-index: 999;top: 0;left: 0;bottom: 0;right: 0;}
+.postLoading .loading-img {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);width: 100px;height: 66px;background: #fff;border-radius: 5px;padding: 10px;border: 1px solid #ddd;box-shadow: 1px 1px 5px #aaa;}
+.postLoading .loading-img img {width: 100%;animation: Postloading 1s infinite ease-in-out;}
+.user_container:hover {cursor: pointer}
+.dollarSign {width: 64px ; height: 64px;}
+.ratingIcon {width: 64px ; height: 64px;}
+.ratingIcon:hover {cursor: pointer;}
+.infoIcon {width: 64px ; height: 64px;}
+.infoIcon:hover {cursor: pointer;}
+@keyframes Postloading {from { transform: rotate(0); }
+to { transform: rotateY(360deg); }
+}
+#ratingResponse {display: none; background-color: #000; position: fixed; z-index: 6; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 50%; color: #fff;}
+.nav-link {color: black}
+.nav-link:hover {color: #aaa}

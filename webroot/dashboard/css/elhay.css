@@ -1,0 +1,178 @@
+.notif{ border-left: 1px solid #ddd;   height: 64px;  }
+.adminfo { background: #1e2a38;    margin-bottom: 25px; }
+.icon{     margin-top: 5px;    margin-right: 10px;  height: 17px; width: 17px;}
+.listyle{     padding:5px ;height: 50px;background:  #293744 ;margin-right: 5px; }
+.styling{ margin-right: -65px; }
+.text-dark {    margin-top: 25px;}
+.box{height:60px;}
+.whitebox{ height: 80px;background: white;}
+.clearfix{background: white;}
+h3{    text-align: center;}
+.imgcalc{      width: 33px;  height: 33px;  text-align: center;    margin-top: 8px;   padding: 0;}
+.cricright{     text-align: left;padding-left: 30px;}
+.criclef{ text-align: right;padding-right: 30px; }
+.crictxtrig{        padding-left: 40px;}
+.crictxtlef{      padding-right: 64px;}
+.circles-text{font-family: arial !important;}
+.label-default {  background-color: #00000000; color: black; font-family: myFont !important}
+.btn-default {  background: white !important; border: 1px solid #ddd !important; color: black !important; font-family: myFont !important
+}
+.isa{     font-size: 11px;left: 0;    right: 0;  margin-left: auto; margin-right: auto;  text-align: center;  
+ width: 150px; border-radius: 10px; background: white;   padding-right: 5px;  padding-left: 5px; position: absolute;  margin-top: -10px;   }
+.page-title{font-family: myFont; font-size: 15px;}
+b{font-family: myFont;}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open > .dropdown-toggle.btn-default {
+    background-color: #e64803 !important;    color: white !important;  border: 1px solid #5fbeaa !important; }
+  .maincol12{font-family :myFont !important; padding: 0}
+.yarab{    margin-right: -11px; }
+.nonedis{ display: none !important;}
+.togole{ display: none !important;}
+.togoleshow{ display: block !important;margin-top: 25px;  margin-right: -5px;}
+.togoleshowmargin > a > img {        width: 40px;
+    height: 21px;}
+.togoleshowmargin{   margin-top: 10px !important;}
+/* table index style */
+.headbg{  background: #48525c;    padding: 0;    border-top-left-radius: 3px;  border-top-right-radius: 3px;}
+.headtxt{   text-align: right; color: white; font-size: 12px;  padding-right: 15px;}
+.headtxt2{   text-align: right; color: white; font-size: 12px;}
+.selection{font-size: 11px;  margin-top: 17px; color: #e64803;font-weight: bold;}
+.icons{  margin-right: -12px;  width: 40px;  /* z-index: 99999999999; */  position: absolute;}
+.dating{      padding: 0;  font-size: 9px; height: 24px;  background: #8b451300; border: none;color:white}
+.unstyled::-webkit-inner-spin-button,
+.unstyled::-webkit-calendar-picker-indicator {
+/*    visibility: hidden;*/
+ background: #8b451300;     -webkit-appearance: none; }
+p{ color: #c9c9c9 !important}
+.sortHeader{color: black; }
+.form-control {
+    background-color: #FFFFFF;  border: 1px solid #e64803;
+    border-radius: 12px;  border-top-left-radius: 12px;  border-top-right-radius: 12px;  border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;   color: #565656;   padding: 7px 12px;  height: 28px;  max-width: 100%;-webkit-box-shadow: none;
+    box-shadow: none; -webkit-transition: all 300ms linear; -moz-transition: all 300ms linear;
+    -o-transition: all 300ms linear;   -ms-transition: all 300ms linear; transition: all 300ms linear; }
+
+#filter-created-start{      border-top-left-radius: 12px;   border-bottom-left-radius: 12px; }
+#filter-created-end{      border-top-left-radius: 12px;  border-bottom-left-radius: 12px; }
+ a{color:black}
+ .table-striped>tbody>tr:nth-of-type(odd) {  background-color: #f9f9f9 !important; }
+.table-condensed>thead>tr>th, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>th, 
+.table-condensed>thead>tr>td, .table-condensed>tbody>tr>td, .table-condensed>tfoot>tr>td {
+    padding-top: 25px;   padding-bottom: 35px;  text-align: center;}
+.chatimg{    border-radius: 80px; height: 70px;    width: 70px;}
+.chatP{         padding: 0; margin-top: 15px;    border-bottom: 1px solid #ddd;}
+.row{ margin-top: 15px;}
+/* end table index style */
+/*chat*/
+.chatimg2{  width: 45px;     height: 45px; border-radius: 35px;}
+.pCHAT{background: #fbe5b4;color: black !important;font-size: 12px; padding: 9px;  padding-bottom: 20px; padding-top: 5px;}
+.pCHAT2{background: #ebecee;color: black !important;font-size: 12px; padding: 9px;  padding-bottom: 20px; padding-top: 5px;}
+/*chat*/
+
+
+/* css general style */
+   input[type="int"] {   border: none !important;    background: none !important; }
+    .srchbtn{  height: 30px;  width: 30px;  background: url(http://localhost/ready/img/search-icon.png);
+    background-repeat: no-repeat;  background-size: 30px 30px;    border: none;   }
+    
+              #filter-id-start{    width: 50px; }
+                            #filter-created-start{    width: 110px; }
+                            #filter-sender-name{  width: 110px;  }
+                            #filter-mobile{    width: 90px;}
+                            #filter-sender-acc-num{    width: 90px;}
+                            #filter-reset-photo{      display: none;}
+                            #filter-transfer-amount-start{    width: 60px;}
+                            #filter-sender-bank{width: 110px;}
+                           
+   .point1{top: 25px; left: 0px;  color: #151515;  background: black;  position: absolute; border: 1px solid;
+    border-radius: 181px; width: 6px;  height: 6px;}
+   .point2{top: 10px; left: 0px; color: #151515;background: black; position: absolute; border: 1px solid;
+    border-radius: 181px; width: 6px; height: 6px;}
+   .point3{top: -5px; left: 0px; color: #151515; background: black;
+    position: absolute; border: 1px solid;border-radius: 181px;width: 6px; height: 6px;}
+ #filter-id-end,#filter-created-end,#filter-price-end,#filter-order-status-end,#filter-created-end-group-addon{ display: none;}
+   button{border-radius: 9px;padding:5px}
+   
+   .list-unstyled  > li > a > span {     margin-right: 10px !important;} 
+   
+   
+   /*action edit/del/view/index*/
+       .actions{    font-size: xx-large;     width: 50px;   height: 50px;   position: relative; padding: 0 !important;   }
+      .actionsheight{  height: 10px; }
+      .dropdown-menu{    background: #e64803;  }
+   /* mediaquery for all screen*/
+   
+   .bootstrapdropmenu{ display: none;}
+ @media  (min-width :360px) and (max-width :640px)
+{
+      .bootstrapdropmenu{display: block}
+.ulli {width: 200px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;}
+
+ .navbar-header{margin-right:100px !important;width:100px}
+ #myNavbar{margin-right:100px !important;width:200px;    border-top: none;}
+ 
+.side-menu { display: none;}
+.pull-left { display: none;}
+.content-page{margin-right: 0px !important;}
+ 
+.whitebox{    background: white;  margin-top: -25px;}
+.isa{    margin-right: 79px;}
+.counter{margin-bottom: -105px !important;}
+.box{    height: 90px;}
+.text-right{   padding-top: 5px;}
+.smallscreen{    margin-top: 10px;}
+.cricright{    text-align: center;    margin-right: 20px;}
+.criclef{      margin-right: 20px;}
+.crictxtrig{    padding-left: 0px;}
+.crictxtlef {  padding-right: 86px; }
+ 
+}
+ @media  (min-width :768px ) and (max-width :1024px)
+{
+      .bootstrapdropmenu{display: block}
+.ulli {width: 200px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;}
+ 
+.side-menu { display: none;}
+.pull-left { display: none;}
+.content-page{    margin-right: 0px !important;}
+.isa{    margin-right: 114px;}
+ 
+ 
+}
+
+
+ @media  (min-width :412px ) and (max-width :732px)
+{
+      .bootstrapdropmenu{display: block}
+.ulli {width: 200px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;}
+.isa {margin-right: 127px;}
+.criclef {text-align: center; padding-right: 0;}
+.crictxtlef {  padding-right: 0; }
+
+ 
+}
+
+ @media  (min-width :375px ) and (max-width :667px)
+{
+    .bootstrapdropmenu{display: block}
+.ulli {width: 200px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;}
+.circle{margin-right: 15px;}
+
+ 
+}
+ @media  (min-width :1024px ) and (max-width :2000px)
+{
+/*   .panel-default{
+   margin-right: 20%;
+   }*/
+
+ 
+}
+ 

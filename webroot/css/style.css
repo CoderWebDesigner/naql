@@ -1,0 +1,942 @@
+/*
+----------------------------
+------Main Style File-------
+----------------------------
+*/
+@font-face {
+  font-family: "Jf flat";
+  src: url("../font/JF Flat regular.otf") format("woff");
+}
+/* Start Nav Bar */
+.navbar-default {
+  background: #f5db60;
+  border: none;
+  margin-bottom: 0;
+  min-height: 95px;
+  border-bottom: 1px solid #ddd;
+}
+.navbar-default .navbar-header {
+  float: left;
+}
+.navbar-default .navbar-header .navbar-toggle {
+  float: right;
+  border-color: #333333;
+  border-radius: 0;
+  background: transparent;
+}
+.navbar-default .navbar-header .navbar-brand {
+  float: left;
+}
+.navbar-default .navbar-header .navbar-brand img {
+  width: 150px;
+}
+.navbar-default .navbar-nav li {
+  padding: 25px 15px;
+}
+.navbar-default .navbar-nav li a {
+  color: #1b0400;
+  font-size: 16px;
+  transition: color .4s ease-in-out;
+}
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {
+  color: #7a8d71;
+}
+
+/* Start Index */
+#slider {
+  height: 500px;
+}
+#slider img {
+  max-height: 520px;
+  min-height: 520px;
+}
+#slider .controls {
+  background: rgba(0, 0, 0, 0.397);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+#slider .controls i {
+  color: #fff;
+  font-size: 26px;
+}
+#slider .control-left {
+  margin-left: 30px;
+}
+#slider .control-right {
+  margin-right: 30px;
+}
+
+.services {
+  padding: 30px 0;
+}
+.services .service {
+  background: #fff;
+  border-radius: 5px;
+  margin: 0 30px 30px;
+  padding: 10px;
+}
+.services .service .service-icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.services .service .service-icon img {
+  width: 100%;
+}
+.services .service .border {
+  width: 90%;
+  height: 5px;
+  background: #4a90e2;
+  margin: 15px auto;
+}
+.services .service p {
+  color: #b1b1b1;
+}
+.services .service .service-info {
+  margin-top: 20px;
+}
+.services .service .service-info .service-count {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #4a90e2;
+  color: #fff;
+  line-height: 50px;
+}
+
+.about {
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px 40px;
+  margin: 0 25px;
+}
+.about p {
+  color: #868686;
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+.features {
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px 40px;
+  margin: 20px 25px;
+}
+.features .feature-icon {
+  width: 200px;
+  height: 200px;
+}
+.features .feature-icon img {
+  width: 100%;
+}
+.features p {
+  color: #868686;
+}
+
+.backImg {
+  margin: -10px;
+}
+
+.why-naql {
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px 40px;
+  margin: 20px 25px;
+}
+.why-naql .why-naql-list li {
+  font-size: 18px;
+}
+.why-naql .downloadbtns {
+  margin-top: 30px;
+}
+
+footer {
+  background: #e1bc0e;
+  color: #1b0400;
+  padding: 30px 0;
+}
+footer .logo-img {
+  margin-top: 70px;
+}
+footer .logo-img img {
+  width: 40%;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+footer ul li {
+  display: inline-block;
+  padding: 10px;
+}
+footer ul li a {
+  color: #1b0400;
+}
+footer ul li img {
+  width: 100%;
+}
+
+.about-page {
+  padding: 50px 0;
+}
+.about-page .about-title {
+  margin-bottom: 30px;
+}
+.about-page .about-section .about-icon {
+  margin-bottom: 30px;
+}
+.about-page .about-section p {
+  color: #868686;
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+/* Start tabs */
+.loading-overlay div {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  animation: loading .6s linear infinite;
+}
+.loading-overlay div span {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loading-overlay div span:first-child {
+  border-left: 7px solid #f5db60;
+  border-bottom: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid transparent;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+.loading-overlay div span:nth-child(2) {
+  width: 30px;
+  height: 30px;
+  background: #f5db60;
+  border-radius: 50%;
+}
+.loading-overlay div span:last-child {
+  border-right: 7px solid #f5db60;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid transparent;
+  border-top: 7px solid transparent;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+/* End loading Overlay style */
+.order-now {
+  background: url("../img/MediaImage_022_17366.png") no-repeat;
+  background-size: 100% 100%;
+  height: 450px;
+}
+.order-now h1 {
+  color: #fff;
+  padding: 20px;
+  margin: 15% 30%;
+}
+
+main .step {
+  max-height: 150px;
+}
+main .tabs .panel-default {
+  background: #f5db60;
+  border-radius: 0;
+}
+main .tabs .panel-default .panel-body .nav-tabs {
+  border: none;
+}
+main .tabs .panel-default .panel-body li {
+  background: #fff;
+  padding: 16px;
+  margin: 0px 57px;
+  border: 1px solid #1b0400;
+  border-radius: 10px;
+  cursor: pointer;
+}
+main .tabs .panel-default .panel-body li .icon {
+  min-height: 63px;
+}
+main .tabs .panel-default .panel-body li .icon img {
+  width: 70px;
+}
+main .tabs .panel-default .panel-body li a {
+  color: #1b0400;
+  font-size: 23px;
+}
+main .tabs .panel-default .panel-body li a:hover {
+  text-decoration: none;
+}
+main .equip {
+  min-height: 250px;
+  padding: 20px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background .4s ease-in-out;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+main .equip img {
+  width: 200px;
+}
+main .equip h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+main .equip:hover {
+  background: rgba(245, 219, 96, 0.4);
+}
+main .equip:hover img {
+  animation: hoverMachine 1.5s 1 ease-in-out;
+}
+main .clicked {
+  background: rgba(245, 219, 96, 0.4);
+}
+main .content #order {
+  padding: 2% 20%;
+  margin-bottom: 70px;
+  background: rgba(245, 219, 96, 0.2);
+}
+main .content #order .select {
+  background: #fff;
+  height: 50px;
+}
+main .content #order .select .form-control {
+  height: inherit;
+  border: none;
+  box-shadow: none;
+}
+main .content #order .select .form-icon {
+  min-height: 50px;
+}
+main .content #order .select img {
+  height: 40px;
+  width: 40px;
+  padding: 9px 0 0;
+}
+main .content #order .select input.form-control {
+  height: 50px;
+}
+main .content #order button {
+  padding: 10px 40px;
+  background: #f5db60;
+  box-shadow: 2px 2px 10px #ddd, -2px -2px 10px #ddd;
+}
+main .content #complete .panel-body {
+  padding: 50px 0;
+}
+main .content #complete .panel-body .complete-icon img {
+  width: 150px;
+}
+main .content #complete .complete-data {
+  margin-top: 40px;
+}
+main .content #complete .complete-data .info {
+  margin-bottom: 15px;
+}
+main .content #complete .complete-data .icon img {
+  width: 60px;
+}
+main .content #complete .complete-data .data {
+  border-right: 1px solid #ddd;
+}
+main .content #complete .complete-data .data #main-type {
+  font-weight: bold;
+  font-size: 16px;
+}
+main .content #complete .complete-data .data #sub-type {
+  color: #a5a5a5;
+}
+main .content .more {
+  background: #f5db60;
+  font-weight: bold;
+}
+main .content .more img {
+  width: 30px;
+}
+
+.postLoading {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.postLoading .loading-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 66px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 5px #aaa;
+}
+.postLoading .loading-img img {
+  width: 100%;
+  animation: Postloading 1s infinite ease-in-out;
+}
+
+.active-step {
+  position: relative;
+}
+.active-step::before {
+  content: "";
+  position: absolute;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-top: 13px solid #fff;
+  bottom: -10px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+@keyframes Postloading {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes hoverMachine {
+  0%,
+    50% {
+    transform: translateX(-300px);
+  }
+  50%,
+    100% {
+    transform: translateX(0);
+  }
+}
+.steps-bar {
+  background: #f5db60;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 5px;
+  padding: 20px 30px;
+}
+.steps-bar .step {
+  background: #fff;
+  border: 1px solid #cecece;
+  padding: 20px 0;
+  margin: 0px 60px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.steps-bar .step img {
+  width: 48px;
+}
+.steps-bar .step .step-content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form-icon img {
+  width: 41px;
+  height: 30px;
+  margin: 10px;
+}
+
+#reservationForm {
+  background: rgba(245, 219, 96, 0.2);
+}
+#reservationForm .form {
+  width: 60%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.form-group select {
+  border: none;
+  box-shadow: none;
+  height: 50px;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.custom-btn {
+  background: #f5db60;
+  padding: 5px 120px;
+  font-weight: bold;
+}
+
+.more > img {
+  width: 20px;
+}
+
+.complete-icon {
+  width: 174px;
+  margin: 4% auto;
+}
+
+/* Regist Owner Page */
+.ownerForm #ownerFrm {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.form-group {
+  background: #fff;
+  margin: 15px 0px;
+}
+.form-group input {
+  border: 0;
+  box-shadow: none;
+  outline: 0;
+  height: 50px;
+}
+
+.regist-owner {
+  background: #f5db60;
+}
+.regist-owner img {
+  width: 23px;
+  height: 23px;
+}
+
+/* Equip Services Page */
+#moreService {
+  width: 60%;
+  margin: 0 auto;
+}
+#moreService .form-group {
+  background: #fff;
+  margin: 15px 0px;
+}
+#moreService .form-group .form-control {
+  border: 0 !important;
+  box-shadow: none;
+  outline: 0;
+}
+#moreService .form-group select {
+  height: 45px;
+}
+#moreService .form-group input {
+  height: 45px;
+}
+#moreService .form-icon img {
+  width: 46px;
+  height: 25px;
+}
+
+.ownerCars {
+  width: 100%;
+  border: 0;
+}
+
+.preview-area img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ddd;
+  padding: 3px;
+  margin: 5px;
+}
+
+#editMyData {
+  width: 60%;
+  margin: auto;
+}
+
+.owner-profile .nav-tabs li a {
+  color: #1b0400;
+}
+.owner-profile .nav-tabs li.active a {
+  color: #f5db60 !important;
+}
+
+.my-equip {
+  margin: 0 13%;
+}
+.my-equip .my-equip_img {
+  padding: 6px;
+}
+.my-equip .my-equip_img img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.owner-icon {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #ffffff85;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.owner-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.login-header {
+  background: #f5db60;
+  padding: 50px 0;
+  height: 393px;
+}
+.login-header .logo-img {
+  background: #fff;
+  width: 200px;
+  margin: 0 auto;
+}
+.login-header .logo-img img {
+  width: 100%;
+}
+.login-header .background-img {
+  background: url("../img/36768978_1641912805906852_5095411267099688960_n.png");
+  background-repeat: repeat-x;
+  height: 164px;
+}
+
+.login-form {
+  width: 55%;
+  margin: auto;
+}
+.login-form .form-control {
+  background: #565656;
+  border-radius: 30px;
+  color: #fff;
+  padding: 0 20px;
+}
+.login-form button {
+  background: #f5db60;
+  width: 100%;
+  border-radius: 30px;
+  height: 50px;
+}
+.login-form p {
+  padding: 20px 0;
+}
+.login-form p a {
+  color: #1b0400;
+}
+
+p a {
+  color: #1b0400;
+}
+
+#loginSubmitBtn {
+  background: #f5db60;
+  width: 100%;
+  border-radius: 30px;
+  height: 50px;
+}
+
+/*Start Contact */
+.contact-header {
+  background: #f5db60;
+  padding: 50px 0;
+  height: 393px;
+  margin-top: 30px;
+}
+.contact-header .logo-img {
+  background: #fff;
+  width: 200px;
+  margin: 0 auto;
+}
+.contact-header .logo-img img {
+  width: 100%;
+}
+.contact-header .background-img {
+  background: url("../img/36768978_1641912805906852_5095411267099688960_n.png");
+  background-repeat: repeat-x;
+  height: 164px;
+}
+
+.contact-body {
+  width: 50%;
+  margin: 0 auto;
+}
+.contact-body .contact-phone,
+.contact-body .contact-email {
+  padding: 15px;
+  text-align: center;
+  background: #f5db60;
+  color: #1b0400;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.img-404 {
+  width: 45%;
+  margin: auto;
+  height: 500px;
+}
+.img-404 h1 {
+  color: #f53a51;
+  font-size: 8vw;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+  /*nav*/
+  .navbar-default .navbar-header {
+    width: 104%;
+    height: 100px;
+  }
+  .navbar-default .navbar-header .navbar-toggle {
+    margin-top: 30px;
+  }
+  .navbar-default .navbar-nav li {
+    padding: 5px 15px !important;
+  }
+
+  #slider {
+    width: 400 !important;
+  }
+  #slider img {
+    max-height: 420px !important;
+    min-height: 420px !important;
+  }
+
+  .nivo-directionNav a {
+    top: 40% !important;
+  }
+
+  main {
+    padding: 0 !important;
+    /* OWNER Register Page */
+    /* Equip Services Page */
+  }
+  main .icon img {
+    width: 140px !important;
+  }
+  main #choose-equip .equip {
+    min-height: 210px !important;
+  }
+  main #choose-equip .panel-body .icon img {
+    width: 150px !important;
+  }
+  main .tabs li {
+    margin: 0px !important;
+    min-height: 63px;
+  }
+  main .tabs li .icon {
+    min-height: auto !important;
+  }
+  main .tabs li a {
+    font-size: 16px !important;
+  }
+  main #order {
+    padding: 2% 0 !important;
+  }
+  main .ownerForm #ownerFrm {
+    width: 85% !important;
+  }
+  main .ownerForm #ownerFrm .control-label img {
+    margin: 8px 0;
+  }
+  main .steps-bar {
+    width: 100% !important;
+    padding: 20px 0px !important;
+    margin: 0 !important;
+  }
+  main .steps-bar .step {
+    margin: 0 -11px !important;
+    max-height: 80px;
+  }
+  main .steps-bar .control-label img {
+    margin-top: 8px;
+  }
+  main #equipService .equip {
+    min-height: 180px !important;
+  }
+  main #equipService .equip img {
+    width: 100px !important;
+  }
+
+  /*404 page */
+  .img-404 {
+    width: 100% !important;
+  }
+
+  /*about Page*/
+  .about-section p {
+    font-size: 16px;
+  }
+
+  /*index Page*/
+  .why-naql {
+    padding: 20px 0 !important;
+    margin: 20px 0 !important;
+  }
+  .why-naql .why-naql-list li {
+    font-size: 16px !important;
+  }
+
+  .about p {
+    font-size: 15px !important;
+  }
+
+  .steps-bar {
+    width: 100% !important;
+    padding: 20px 0px !important;
+    margin: 0 !important;
+  }
+  .steps-bar .step {
+    margin: 0 18px !important;
+  }
+
+  #reservationForm .form {
+    width: 88% !important;
+  }
+
+  #userUploadImg {
+    left: 18%;
+  }
+
+  .social ul {
+    padding: 0px !important;
+  }
+
+  .contact-body {
+    width: 65% !important;
+  }
+
+  .login-form {
+    width: 85% !important;
+  }
+
+  #editMyData {
+    width: 80% !important;
+  }
+
+  #ownerFrm .control-label img {
+    margin-top: 10px;
+  }
+
+  .owner-profile .nav-tabs li.active a {
+    height: 90px;
+  }
+}
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .navbar-header {
+    width: 100% !important;
+  }
+  .navbar-header .navbar-toggle {
+    margin-top: 28px !important;
+  }
+
+  #slider {
+    width: 400 !important;
+  }
+  #slider img {
+    max-height: 420px !important;
+    min-height: 420px !important;
+  }
+
+  main {
+    padding: 0 !important;
+  }
+  main .tabs li {
+    margin: 0px !important;
+    min-height: 94px;
+  }
+  main .tabs li a {
+    font-size: 16px !important;
+  }
+
+  .about p {
+    font-size: 15px !important;
+  }
+
+  .steps-bar {
+    width: 100% !important;
+    padding: 20px 0px !important;
+    margin: 0 !important;
+  }
+  .steps-bar .step {
+    margin: 0 18px !important;
+  }
+
+  /*404 page */
+  .img-404 {
+    width: 68% !important;
+  }
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-default .navbar-nav li {
+    padding: 25px 0px !important;
+  }
+
+  main .tabs li {
+    margin: 0 !important;
+  }
+  main .tabs li a {
+    font-size: 16px !important;
+  }
+
+  .steps-bar {
+    width: 100% !important;
+    padding: 20px 0px !important;
+    margin: 0 !important;
+  }
+  .steps-bar .step {
+    margin: 0 18px !important;
+  }
+
+  /*404 page */
+  .img-404 {
+    width: 68% !important;
+  }
+}
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  main .tabs li {
+    margin: 0 10px !important;
+  }
+
+  .steps-bar {
+    width: 100% !important;
+    padding: 20px 0px !important;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up)*/
+body {
+  font-family: "Jf flat";
+}
+
+main {
+  padding: 20px 10px 0;
+  background: #e6eaed;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */

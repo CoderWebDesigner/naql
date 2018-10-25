@@ -1,0 +1,43 @@
+
+<div class="areas form" >
+    
+    <fieldset>
+  <legend style="color:black !important;border-bottom: none "><?= ___('إضافة منطقة جديدة ') ?></legend>
+  
+        
+        <div class="panel panel-default">
+                    
+
+            <div class="col-sm-12" style="border-bottom: 1px solid #ddd ">
+                <div class="col-sm-6">   
+                    <a class="btn btn-primary" href="<?=URL?>users/allBlackList" >كل المحظورين</a>
+            <?php
+           // echo $this->Navbars->actionButtons(['buttons_group' => 'add']);
+            ?>    </div>
+            </div>
+            <div class="panel-body" style="margin-top:10px;">
+           
+            <?php
+            echo $this->AlaxosForm->create($area, ['class' => 'form-horizontal', 'role' => 'form', 'novalidate' => 'novalidate']);
+            
+            echo '<div class="form-group">';
+           
+              echo '<div class="col-sm-offset-5 col-sm-5">';
+            echo $this->AlaxosForm->input('user_id', ['options'=>$allActiveUser,'label' => false, 'class' => 'form-control']);
+            echo '</div>';
+             echo $this->AlaxosForm->label('user_id', __('إسم الشخص'), ['class' => 'col-sm-2 control-label']);
+          
+             
+            echo '<div class="col-sm-offset-2 col-sm-5">';
+            echo $this->AlaxosForm->button(___('حظر'), ['class' => 'btn btn-default']);
+            echo '</div>';
+            echo '</div>';
+            
+            echo $this->AlaxosForm->end(); 
+            ?>
+            </div>
+        </div>
+        
+    </fieldset>
+    
+</div>

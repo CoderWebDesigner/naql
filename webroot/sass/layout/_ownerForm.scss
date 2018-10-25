@@ -1,0 +1,71 @@
+/* Regist Owner Page */
+
+.ownerForm {
+    #ownerFrm {
+        width: 60%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+}
+
+.form-group {
+    background: #fff;
+    margin: 15px 0px;
+    input {
+        border: 0;
+        box-shadow: none;
+        outline: 0;
+        height: 50px
+    }
+}
+
+.regist-owner {
+    background: $mainColor;
+    img {
+        width: 23px;
+        height: 23px;
+    }
+}
+
+/* Equip Services Page */
+
+#moreService {
+    width: 60%;
+    margin: 0 auto;
+    .form-group {
+        background: #fff;
+        margin: 15px 0px;
+        .form-control {
+            border: 0 !important;
+            box-shadow: none;
+            outline: 0;
+        }
+        select {
+            height: 45px;
+        }
+        input {
+            height: 45px;
+        }
+    }
+    .form-icon {
+        img {
+            width: 46px;
+            height: 25px;
+        }
+    }
+}
+
+.ownerCars {
+    width: 100%;
+    border: 0;
+}
+
+.preview-area {
+    img {
+        width: 150px;
+        height: 150px;
+        border: 1px solid #ddd;
+        padding: 3px;
+        margin: 5px;
+    }
+}

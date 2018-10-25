@@ -1,0 +1,30 @@
+/*
+----------------------------
+------Main Style File-------
+----------------------------
+*/
+@import 'helper/variables';
+
+@font-face{
+    font-family:$font;
+    src: url('../font/JF\ Flat\ regular.otf') format("woff");
+}
+@import 'layout/nav';
+@import 'layout/index';
+@import 'layout/about';
+@import 'layout/tabs';
+@import ' layout/ownerForm';
+@import ' layout/owner';
+@import ' layout/login';
+@import ' layout/contact';
+@import ' layout/404';
+@import 'helper/mediaQuery';
+body{
+    font-family: $font;
+}
+
+main{
+    padding: 20px 10px 0;
+    background:#e6eaed;
+    overflow: hidden;
+}
