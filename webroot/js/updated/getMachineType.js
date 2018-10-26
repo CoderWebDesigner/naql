@@ -9,10 +9,7 @@ var IDQuery = localStorage.getItem("UserId"),
 $(document).attr("title", "اختر معدتك");
 
 //Hide Reservation Section & Next Btn
-$('#reservationForm').hide();
-$('.next').hide();
-$('.preview-area').hide();
-$('.postLoading').hide();
+$('#reservationForm,.next,.preview-area,.postLoading').hide();
 
 $(function () {
     // Multiple images preview in browser
